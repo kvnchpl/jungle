@@ -4,8 +4,14 @@
     "description": "An exploratory digital zine offering reprieve from linearity, productivity, and digital overstimulation.",
     "url": "https://kvnchpl.github.io/jungle",
     "version": "0.1.0",
-    "creator": {
-        "name": "Kevin Chappelle",
-        "github": "kvnchpl"
-    }
+    "creators": [
+        {
+            "name": "Kevin Chappelle",
+            "github": "kvnchpl"
+        },
+        {
+            "name": "Lisa Yang",
+            "github": "lisayang041"
+        }
+    ]
 }
