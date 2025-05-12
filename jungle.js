@@ -14,12 +14,21 @@ if (jungleHistory[jungleHistory.length - 1] !== currentPath) {
     sessionStorage.setItem(historyKey, JSON.stringify(jungleHistory));
 }
 
+console.log("=== JUNGLE DEBUG ===");
+console.log("Current path:", currentPath);
+console.log("Jungle history:", jungleHistory);
+
 // Find current index in history
 const currentIndex = jungleHistory.lastIndexOf(currentPath);
+
+console.log("Current index:", currentIndex);
 
 // Determine previous and next paths
 const previousPath = currentIndex > 0 ? jungleHistory[currentIndex - 1] : null;
 const nextPath = currentIndex < jungleHistory.length - 1 ? jungleHistory[currentIndex + 1] : null;
+
+console.log("Previous path:", previousPath);
+console.log("Next path:", nextPath);
 
 // Update back arrow
 if (previousPath) {
