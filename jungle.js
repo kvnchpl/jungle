@@ -8,22 +8,22 @@ const currentPath = window.location.pathname
     .replace(/\/index\.html$/, "")
     .replace(/\/$/, "");
 
-// Load and update session history
+// Load history and index
 let jungleHistory = JSON.parse(sessionStorage.getItem(historyKey) || "[]");
+let currentIndex = parseInt(sessionStorage.getItem("jungleHistoryIndex") || "0", 10);
 
-// Avoid duplicating if user reloads same page
-if (jungleHistory.length === 0 || jungleHistory[jungleHistory.length - 1] !== currentPath) {
+// Only add new path if it's different from the current index entry
+if (jungleHistory[currentIndex] !== currentPath) {
+    jungleHistory = jungleHistory.slice(0, currentIndex + 1);
     jungleHistory.push(currentPath);
+    currentIndex = jungleHistory.length - 1;
     sessionStorage.setItem(historyKey, JSON.stringify(jungleHistory));
+    sessionStorage.setItem("jungleHistoryIndex", currentIndex.toString());
 }
 
 console.log("=== JUNGLE DEBUG ===");
 console.log("Current path:", currentPath);
 console.log("Jungle history:", jungleHistory);
-
-// Find current index in history
-const currentIndex = jungleHistory.lastIndexOf(currentPath);
-
 console.log("Current index:", currentIndex);
 
 // Determine previous and next paths
