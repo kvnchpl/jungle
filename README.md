@@ -25,7 +25,7 @@ wandering.
 
 Each zine page is a separate file in `z/`. To add a new node:
 
-1. Copy an existing page like `canopy.html`
+1. Copy an existing page like `1.html`
 2. Rename it to something meaningful (e.g. `roots.html`)
 3. Adjust the content and links
 4. Include `
