@@ -2,14 +2,17 @@ const historyKey = "jungleHistory";
 const backArrow = document.getElementById("back-arrow");
 const forwardArrow = document.getElementById("forward-arrow");
 
-// Get current path (relative to root, without domain)
-const currentPath = window.location.pathname.replace(/^\/+/, "");
+// Get current path (relative to root, without domain), normalized to avoid duplicates
+const currentPath = window.location.pathname
+    .replace(/^\/+/, "")
+    .replace(/\/index\.html$/, "")
+    .replace(/\/$/, "");
 
 // Load and update session history
 let jungleHistory = JSON.parse(sessionStorage.getItem(historyKey) || "[]");
 
 // Avoid duplicating if user reloads same page
-if (jungleHistory[jungleHistory.length - 1] !== currentPath) {
+if (jungleHistory.length === 0 || jungleHistory[jungleHistory.length - 1] !== currentPath) {
     jungleHistory.push(currentPath);
     sessionStorage.setItem(historyKey, JSON.stringify(jungleHistory));
 }
