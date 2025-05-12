@@ -7,12 +7,11 @@ let structure = {};
 let jungleHistory = JSON.parse(sessionStorage.getItem(historyKey) || "[]");
 
 async function loadStructure() {
-    const res = await fetch("data/structure.json");
-    structure = await res.json();
+    structure = await getStructure();
 }
 
 async function renderPage(slug) {
-    const page = await fetch(`content/${slug}.json`).then(res => res.json());
+    const page = await getPage(slug);
 
     document.title = page.title;
     contentEl.innerHTML = `
@@ -53,3 +52,14 @@ function handleHashChange() {
 // Init
 window.addEventListener("hashchange", handleHashChange);
 loadStructure().then(() => handleHashChange());
+
+// Helpers
+async function getPage(slug) {
+  const res = await fetch(`z/${slug}.json`);
+  return res.json();
+}
+
+async function getStructure() {
+  const res = await fetch("d/structure.json");
+  return res.json();
+}
