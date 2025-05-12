@@ -8,12 +8,12 @@
     "description": "A nonlinear digital zine offering reprieve and discovery in the digital jungle.",
     "icons": [
         {
-            "src": "a/ico/android-chrome-192x192.png",
+            "src": "a/f/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "a/ico/android-chrome-512x512.png",
+            "src": "a/f/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
