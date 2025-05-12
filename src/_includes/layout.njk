@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>{{ title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/jungle/style.css">
-</head>
+{% include "head.njk" %}
 
 <body>
     <main>
         {{ content | safe }}
     </main>
+
+    <aside>
+        <h2>Explore the Jungle</h2>
+        <ul>
+            {% for node in collections.nodes %}
+            <li><a href="{{ node.url }}">{{ node.data.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </aside>
 </body>
 
 </html>
