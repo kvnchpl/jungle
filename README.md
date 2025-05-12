@@ -14,7 +14,6 @@ wandering.
 |--------------|------------------------------------------|
 | `z/`         | Zine content — individual HTML pages     |
 | `a/`         | Assets — audio, images, video, 3D models |
-| `d/`         | Data — metadata, structure, tags         |
 | `jungle.js`  | Shared JS logic for navigation           |
 | `jungle.css` | Shared styling across all pages          |
 | `index.html` | Entry point for the zine (the portal)    |
@@ -25,7 +24,7 @@ wandering.
 
 Each zine page is a separate file in `z/`. To add a new node:
 
-1. Copy an existing page like `1.html`
+1. Copy an existing page like `00001.html`
 2. Rename it to something meaningful (e.g. `roots.html`)
 3. Adjust the content and links
 4. Include `
