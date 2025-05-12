@@ -1,6 +1,11 @@
 {
     "name": "JUNGLE",
     "short_name": "Jungle",
+    "start_url": "/jungle/index.html",
+    "scope": "/jungle/",
+    "orientation": "portrait",
+    "lang": "en",
+    "description": "A nonlinear digital zine offering reprieve and discovery in the digital jungle.",
     "icons": [
         {
             "src": "a/icons/android-chrome-192x192.png",
