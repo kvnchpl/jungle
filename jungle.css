@@ -4,11 +4,13 @@ body {
     background-color: #f0f7f4;
     color: #222;
     padding: 2rem;
+    text-transform: lowercase;
 }
 
 a {
     color: #006400;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 a:hover {
