@@ -16,7 +16,7 @@ wandering.
 | `a/`         | Assets — audio, images, video, 3D models |
 | `d/`         | Data — metadata, structure, tags         |
 | `jungle.js`  | Shared JS logic for navigation           |
-| `style.css`  | Shared styling across all pages          |
+| `jungle.css`  | Shared styling across all pages          |
 | `index.html` | Entry point for the zine (the portal)    |
 
 ---
