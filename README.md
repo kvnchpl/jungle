@@ -16,7 +16,7 @@ wandering.
 | `a/`         | Assets — audio, images, video, 3D models |
 | `d/`         | Data — metadata, structure, tags         |
 | `jungle.js`  | Shared JS logic for navigation           |
-| `jungle.css`  | Shared styling across all pages          |
+| `jungle.css` | Shared styling across all pages          |
 | `index.html` | Entry point for the zine (the portal)    |
 
 ---
@@ -29,7 +29,7 @@ Each zine page is a separate file in `z/`. To add a new node:
 2. Rename it to something meaningful (e.g. `roots.html`)
 3. Adjust the content and links
 4. Include `
-<script src="../jungle.js" type="module"></script>` to enable forward/back nav
+<script src="/jungle.js" type="module"></script>` to enable forward/back nav
 
 Optionally update `d/structure.json` if using tags or relationships later.
 
