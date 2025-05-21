@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Shrikhand&display=swap');
 
 body {
-    font-family: 'Georgia', serif, "Shrikhand", serif;
+    /* font-family: 'Georgia', serif, "Shrikhand", serif; */
     line-height: 1.6;
     background-color: #446A46f4;
     color: #222;
@@ -13,6 +13,7 @@ body {
 
 .shrikland {
     font-family:"Shrikhand", serif;
+    color: #FFFDF6;
 
 };
 
