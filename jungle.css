@@ -17,6 +17,12 @@ body {
     text-transform: lowercase;
 }
 
+#flowerbody {
+    background-image: url('flower1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
 #shrikland {
     font-family:"Shrikhand", serif;
     color: #FFFDF6;
