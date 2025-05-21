@@ -7,6 +7,10 @@ body {
     text-transform: lowercase;
 }
 
+h1 {
+    text-transform: uppercase;
+}
+
 a {
     color: #006400;
     text-decoration: none;
