@@ -6,7 +6,7 @@ body {
     font-family: 'Georgia', serif, "Shrikhand", serif;
     line-height: 1.6;
     background-color: #446A46f4;
-    color: #222;
+    color: #FFFDF6;
     padding: 2rem;
     text-transform: lowercase;
 }
@@ -19,7 +19,7 @@ body {
     margin-left: auto; 
     margin-right: auto; 
     text-align: center;
-     font-size: 12vw;
+     font-size: 10vw;
     letter-spacing: 0.4rem;
 
 };
