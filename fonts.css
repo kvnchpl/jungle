@@ -5,7 +5,6 @@
        url('a/f/OldStandardTT-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
 }
 
 /* Old Standard TT Bold */
@@ -15,7 +14,6 @@
        url('a/f/OldStandardTT-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
 }
 
 /* Old Standard TT Italic */
@@ -25,7 +23,6 @@
        url('a/f/OldStandardTT-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
-  font-display: swap;
 }
 
 /* Shrikhand */
@@ -35,7 +32,6 @@
        url('a/f/Shrikhand-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
 }
 
 /* Space Mono Regular */
@@ -45,7 +41,6 @@
        url('a/f/SpaceMono-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
 }
 
 /* Space Mono Bold */
@@ -55,7 +50,6 @@
        url('a/f/SpaceMono-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
 }
 
 /* Space Mono Italic */
@@ -65,7 +59,6 @@
        url('a/f/SpaceMono-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
-  font-display: swap;
 }
 
 /* Space Mono Bold Italic */
@@ -75,5 +68,4 @@
        url('a/f/SpaceMono-BoldItalic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
-  font-display: swap;
 }
