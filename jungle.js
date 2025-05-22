@@ -1,3 +1,6 @@
+//giving up on the navigation arrows for now
+
+/*
 const historyKey = "jungleHistory";
 const backArrow = document.getElementById("back-arrow");
 const forwardArrow = document.getElementById("forward-arrow");
@@ -48,3 +51,4 @@ if (nextPath) {
 } else {
     forwardArrow.style.display = "none";
 }
+*/
