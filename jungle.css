@@ -1,7 +1,5 @@
 body {
-    /* font-family: 'Georgia', serif, "Shrikhand", serif;
-     */
-     font-family: "Space Mono", monospace;
+    font-family: "Space Mono", monospace;
     font-weight: 200;
     font-style: normal;
     line-height: 0.5;
@@ -10,26 +8,6 @@ body {
     padding: 3rem;
     text-transform: lowercase;
 }
-
-#flowerbody {
-    background-image: url('a/i/flower1.jpg');
-    background-repeat: no-repeat;
-    background-size:auto;
-}
-
-#homepageTitle {
-    font-family:"Shrikhand", serif;
-    color: #FFFDF6;
-    display: block; 
-    position: relative; 
-    margin-left: auto; 
-    margin-right: auto; 
-    text-align: center;
-    font-size: 10vw;
-    padding-top:100px;
-    letter-spacing: 0.4rem;
-
-};
 
 h1 {
     text-transform: uppercase;
@@ -44,4 +22,3 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
