@@ -9,7 +9,7 @@
     --font-size-centered-title: clamp(4rem, 10vw, 10vw);
     --font-size-h1: clamp(2.5rem, 8vw, 5rem);
     --font-weight-bold: 700;
-    --font-weight-main: 200;
+    --font-weight-main: 400;
 
     --height-body: 100vh;
     --width-body: 100vw;
