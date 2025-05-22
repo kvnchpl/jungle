@@ -1,39 +1,62 @@
+:root {
+    --color-bg: #446A46f4;
+    --color-text: #FFFDF6;
+    --color-link: #FFFDF6;
+    --font-main: "Space Mono", monospace;
+    --font-heading: "Shrikhand", serif;
+    --font-weight-main: 200;
+    --font-weight-bold: 700;
+    --line-height: 1.2;
+    --padding-body: clamp(1.5rem, 5vw, 3rem);
+    --font-size-base: clamp(1rem, 2vw, 1.25rem);
+    --font-size-h1: clamp(2.5rem, 8vw, 5rem);
+    --font-size-404: clamp(4rem, 10vw, 10vw);
+    --letter-spacing-h1: 0.4rem;
+    --padding-404: 100px;
+}
+
 body {
-    font-family: "Space Mono", monospace;
-    font-weight: 200;
+    font-family: var(--font-main);
+    font-weight: var(--font-weight-main);
     font-style: normal;
-    line-height: 0.5;
-    background-color: #446A46f4;
-    color: #FFFDF6;
-    padding: 3rem;
+    line-height: var(--line-height);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    padding: var(--padding-body);
     text-transform: lowercase;
+    font-size: var(--font-size-base);
 }
 
 h1 {
     text-transform: uppercase;
+    font-size: var(--font-size-h1);
+    letter-spacing: var(--letter-spacing-h1);
+    font-family: var(--font-main);
+    font-weight: var(--font-weight-bold);
+    margin: 0 0 calc(var(--font-size-h1) / 2) 0;
 }
 
-a, pre a {
-    color: #FFFDF6;
+a,
+pre a {
+    color: var(--color-link);
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
+    transition: text-decoration 0.2s;
 }
 
-a:hover, pre a:hover {
+a:hover,
+pre a:hover {
     text-decoration: underline;
 }
 
 #centeredTitle {
-    font-family: "Shrikhand", serif;
-    color: #FFFDF6;
+    font-family: var(--font-heading);
+    color: var(--color-text);
     display: block;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     text-align: center;
-    font-size: 10vw;
-    padding-top: 100px;
-    letter-spacing: 0.4rem;
-
+    font-size: var(--font-size-404);
+    padding-top: var(--padding-404);
+    letter-spacing: var(--letter-spacing-h1);
 }
