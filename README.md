@@ -22,7 +22,7 @@ wandering.
 | `jungle.js`   | Shared JS logic for page navigation and meta behavior    |
 | `jungle.css`  | Shared styling across all pages                          |
 | `fonts.css`   | Font face definitions                                    |
-| `index.html`  | Entry point for the zine (the portal)                    |
+| `index.html`  | Entry point for the zine                                 |
 
 ---
 
