@@ -1,6 +1,7 @@
 :root {
-    --color-bg: #446A46f4;
+    --color-bg: #446A46;
     --color-link: #FFFDF6;
+    --color-link-hover: #d7d419;
     --color-text: #FFFDF6;
 
     --font-heading: "Shrikhand", serif;
@@ -63,11 +64,12 @@ pre a {
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
-    transition: text-decoration 0.2s;
 }
 
 a:hover,
 pre a:hover {
+    color: var(--color-link-hover);
+    text-transform: inherit;
     text-decoration: underline;
 }
 
