@@ -40,8 +40,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    width: 100vw;
+    min-height: var(--height-body);
+    width: var(--width-body);
     box-sizing: border-box;
 }
 
