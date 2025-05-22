@@ -76,6 +76,11 @@ pre a:hover {
     background-size: auto;
 }
 
+.pre-top-left {
+    margin-top: var(--margin-pre);
+    margin-left: var(--margin-pre);
+}
+
 #centered-title {
     position: absolute;
     top: 50%;
@@ -88,7 +93,3 @@ pre a:hover {
     text-transform: lowercase
 }
 
-#top-left-pre {
-    margin-top: var(--margin-pre);
-    margin-left: var(--margin-pre);
-}
