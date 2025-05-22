@@ -9,10 +9,12 @@
     --font-size-h1: clamp(2.5rem, 8vw, 5rem);
     --font-weight-bold: 700;
     --font-weight-main: 200;
+    --height-body: 100vh;
     --line-height: 1.2;
     --margin-body: 0;
     --margin-pre: 2rem;
     --padding-body: 0;
+    --width-body: 100vw;
 }
 
 body {
@@ -22,10 +24,12 @@ body {
     font-size: var(--font-size-base);
     font-style: normal;
     font-weight: var(--font-weight-main);
+    height: var(--height-body);
     line-height: var(--line-height);
     margin: var(--margin-body);
     padding: var(--padding-body);
     text-transform: lowercase;
+    width: var(--width-body);
 }
 
 h1 {
