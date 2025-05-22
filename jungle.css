@@ -6,7 +6,7 @@
     --font-heading: "Shrikhand", serif;
     --font-main: "Space Mono", monospace;
     --font-size-base: clamp(1rem, 2vw, 1.25rem);
-    --font-size-centered-title: clamp(4rem, 10vw, 10vw);
+    --font-size-centered-title: clamp(6rem, 10vw, 10vw);
     --font-size-h1: clamp(2.5rem, 8vw, 5rem);
     --font-weight-bold: 700;
     --font-weight-main: 400;
