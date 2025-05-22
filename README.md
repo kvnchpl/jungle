@@ -34,7 +34,7 @@ To add a new node:
 1. Copy an existing page like `00001.html`
 2. Rename it to the next available number
 3. Adjust the content and internal links
-4. Include `<script src="jungle.js" type="module"></script>` to enable navigation logic
+4. Include `<script src="jungle.js" type="module"></script>` to enable main script
 
 Each page may also include its own `<meta>` tags for `title`, `description`, and `tags`.
 
