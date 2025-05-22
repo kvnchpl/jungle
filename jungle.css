@@ -1,46 +1,46 @@
 :root {
     --color-bg: #446A46f4;
-    --color-text: #FFFDF6;
     --color-link: #FFFDF6;
-    --font-main: "Space Mono", monospace;
+    --color-text: #FFFDF6;
     --font-heading: "Shrikhand", serif;
-    --font-weight-main: 200;
+    --font-main: "Space Mono", monospace;
+    --font-size-base: clamp(1rem, 2vw, 1.25rem);
+    --font-size-centered-title: clamp(4rem, 10vw, 10vw);
+    --font-size-h1: clamp(2.5rem, 8vw, 5rem);
     --font-weight-bold: 700;
+    --font-weight-main: 200;
     --line-height: 1.2;
     --margin-body: 0;
     --padding-body: 0;
-    --font-size-base: clamp(1rem, 2vw, 1.25rem);
-    --font-size-h1: clamp(2.5rem, 8vw, 5rem);
-    --font-size-centered-title: clamp(4rem, 10vw, 10vw);
 }
 
 body {
-    font-family: var(--font-main);
-    font-weight: var(--font-weight-main);
-    font-style: normal;
-    line-height: var(--line-height);
     background-color: var(--color-bg);
     color: var(--color-text);
+    font-family: var(--font-main);
+    font-size: var(--font-size-base);
+    font-style: normal;
+    font-weight: var(--font-weight-main);
+    line-height: var(--line-height);
     margin: var(--margin-body);
     padding: var(--padding-body);
     text-transform: lowercase;
-    font-size: var(--font-size-base);
 }
 
 h1 {
-    text-transform: uppercase;
-    font-size: var(--font-size-h1);
     font-family: var(--font-main);
+    font-size: var(--font-size-h1);
     font-weight: var(--font-weight-bold);
     margin: 0 0 calc(var(--font-size-h1) / 2) 0;
+    text-transform: uppercase;
 }
 
 a,
 pre a {
     color: var(--color-link);
+    cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
-    cursor: pointer;
     transition: text-decoration 0.2s;
 }
 
@@ -50,11 +50,11 @@ pre a:hover {
 }
 
 #centeredTitle {
-    text-transform: lowercase;
-    font-family: var(--font-heading);
     color: var(--color-text);
     display: block;
+    font-family: var(--font-heading);
+    font-size: var(--font-size-centered-title);
     margin: 0 auto;
     text-align: center;
-    font-size: var(--font-size-centered-title);
+    text-transform: lowercase;
 }
