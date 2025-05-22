@@ -2,6 +2,7 @@
     --color-bg: #446A46f4;
     --color-link: #FFFDF6;
     --color-text: #FFFDF6;
+
     --font-heading: "Shrikhand", serif;
     --font-main: "Space Mono", monospace;
     --font-size-base: clamp(1rem, 2vw, 1.25rem);
@@ -9,27 +10,29 @@
     --font-size-h1: clamp(2.5rem, 8vw, 5rem);
     --font-weight-bold: 700;
     --font-weight-main: 200;
+
     --height-body: 100vh;
-    --line-height: 1.2;
-    --margin-body: 0;
-    --margin-pre: 2rem;
-    --padding-body: 0;
     --width-body: 100vw;
+    --margin-body: 0;
+    --padding-body: 0;
+    --margin-pre: 2rem;
+
+    --line-height: 1.2;
 }
 
 body {
-    background-color: var(--color-bg);
-    color: var(--color-text);
+    height: var(--height-body);
+    width: var(--width-body);
+    margin: var(--margin-body);
+    padding: var(--padding-body);
     font-family: var(--font-main);
     font-size: var(--font-size-base);
     font-style: normal;
     font-weight: var(--font-weight-main);
-    height: var(--height-body);
     line-height: var(--line-height);
-    margin: var(--margin-body);
-    padding: var(--padding-body);
     text-transform: lowercase;
-    width: var(--width-body);
+    background-color: var(--color-bg);
+    color: var(--color-text);
 }
 
 main {
@@ -42,21 +45,20 @@ main {
     box-sizing: border-box;
 }
 
-
 h1 {
     font-family: var(--font-main);
     font-size: var(--font-size-h1);
     font-weight: var(--font-weight-bold);
-    margin: 0 0 calc(var(--font-size-h1) / 2) 0;
     text-transform: uppercase;
+    margin: 0 0 calc(var(--font-size-h1) / 2) 0;
 }
 
 a,
 pre a {
     color: var(--color-link);
-    cursor: pointer;
-    text-decoration: none;
     text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
     transition: text-decoration 0.2s;
 }
 
@@ -66,14 +68,14 @@ pre a:hover {
 }
 
 #centeredTitle {
-    color: var(--color-text);
-    display: block;
-    font-family: var(--font-heading);
-    font-size: var(--font-size-centered-title);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: block;
+    font-family: var(--font-heading);
+    font-size: var(--font-size-centered-title);
+    color: var(--color-text);
 }
 
 #top-left-pre {
