@@ -1,0 +1,79 @@
+/* Old Standard TT Regular */
+@font-face {
+  font-family: 'Old Standard TT';
+  src: url('a/f/OldStandardTT-Regular.woff2') format('woff2'),
+       url('a/f/OldStandardTT-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Old Standard TT Bold */
+@font-face {
+  font-family: 'Old Standard TT';
+  src: url('a/f/OldStandardTT-Bold.woff2') format('woff2'),
+       url('a/f/OldStandardTT-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Old Standard TT Italic */
+@font-face {
+  font-family: 'Old Standard TT';
+  src: url('a/f/OldStandardTT-Italic.woff2') format('woff2'),
+       url('a/f/OldStandardTT-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Shrikhand */
+@font-face {
+  font-family: 'Shrikhand';
+  src: url('a/f/Shrikhand-Regular.woff2') format('woff2'),
+       url('a/f/Shrikhand-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Space Mono Regular */
+@font-face {
+  font-family: 'Space Mono';
+  src: url('a/f/SpaceMono-Regular.woff2') format('woff2'),
+       url('a/f/SpaceMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Space Mono Bold */
+@font-face {
+  font-family: 'Space Mono';
+  src: url('a/f/SpaceMono-Bold.woff2') format('woff2'),
+       url('a/f/SpaceMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Space Mono Italic */
+@font-face {
+  font-family: 'Space Mono';
+  src: url('a/f/SpaceMono-Italic.woff2') format('woff2'),
+       url('a/f/SpaceMono-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Space Mono Bold Italic */
+@font-face {
+  font-family: 'Space Mono';
+  src: url('a/f/SpaceMono-BoldItalic.woff2') format('woff2'),
+       url('a/f/SpaceMono-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
