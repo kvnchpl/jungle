@@ -7,12 +7,11 @@
     --font-weight-main: 200;
     --font-weight-bold: 700;
     --line-height: 1.2;
-    --padding-body: clamp(1.5rem, 5vw, 3rem);
+    --margin-body: 0;
+    --padding-body: 0;
     --font-size-base: clamp(1rem, 2vw, 1.25rem);
     --font-size-h1: clamp(2.5rem, 8vw, 5rem);
     --font-size-centered-title: clamp(4rem, 10vw, 10vw);
-    --letter-spacing-h1: 0.4rem;
-    --padding-centered-title: 100px;
 }
 
 body {
@@ -22,6 +21,7 @@ body {
     line-height: var(--line-height);
     background-color: var(--color-bg);
     color: var(--color-text);
+    margin: var(--margin-body);
     padding: var(--padding-body);
     text-transform: lowercase;
     font-size: var(--font-size-base);
@@ -57,5 +57,4 @@ pre a:hover {
     margin: 0 auto;
     text-align: center;
     font-size: var(--font-size-centered-title);
-    padding-top: var(--padding-centered-title);
 }
