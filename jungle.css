@@ -79,6 +79,8 @@ pre a:hover {
 .pre-top-left {
     margin-top: var(--margin-pre);
     margin-left: var(--margin-pre);
+    margin-bottom: 0;
+    margin-right: 0;
 }
 
 #centered-title {
@@ -92,4 +94,3 @@ pre a:hover {
     color: var(--color-text);
     text-transform: lowercase
 }
-
