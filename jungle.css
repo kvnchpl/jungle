@@ -11,6 +11,7 @@
     --font-weight-main: 200;
     --line-height: 1.2;
     --margin-body: 0;
+    --margin-pre: 2rem;
     --padding-body: 0;
 }
 
@@ -57,4 +58,8 @@ pre a:hover {
     margin: 0 auto;
     text-align: center;
     text-transform: lowercase;
+}
+
+#top-left-pre {
+    margin: var(--margin-pre) 0 0 var(--margin-pre);
 }
