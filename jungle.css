@@ -13,13 +13,14 @@ h1 {
     text-transform: uppercase;
 }
 
-a {
+a, pre a {
     color: #FFFDF6;
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
-a:hover {
+a:hover, pre a:hover {
     text-decoration: underline;
 }
 
