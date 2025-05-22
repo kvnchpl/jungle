@@ -71,7 +71,12 @@ pre a:hover {
     text-decoration: underline;
 }
 
-#centeredTitle {
+.fullscreen-image {
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#centered-title {
     position: absolute;
     top: 50%;
     left: 50%;
