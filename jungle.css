@@ -10,9 +10,9 @@
     --padding-body: clamp(1.5rem, 5vw, 3rem);
     --font-size-base: clamp(1rem, 2vw, 1.25rem);
     --font-size-h1: clamp(2.5rem, 8vw, 5rem);
-    --font-size-404: clamp(4rem, 10vw, 10vw);
+    --font-size-centered-title: clamp(4rem, 10vw, 10vw);
     --letter-spacing-h1: 0.4rem;
-    --padding-404: 100px;
+    --padding-centered-title: 100px;
 }
 
 body {
@@ -56,7 +56,7 @@ pre a:hover {
     display: block;
     margin: 0 auto;
     text-align: center;
-    font-size: var(--font-size-404);
-    padding-top: var(--padding-404);
+    font-size: var(--font-size-centered-title);
+    padding-top: var(--padding-centered-title);
     letter-spacing: var(--letter-spacing-h1);
 }
