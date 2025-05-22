@@ -50,6 +50,7 @@ pre a:hover {
 }
 
 #centeredTitle {
+    text-transform: lowercase;
     font-family: var(--font-heading);
     color: var(--color-text);
     display: block;
