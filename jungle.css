@@ -53,6 +53,10 @@ h1 {
     margin: 0 0 calc(var(--font-size-h1) / 2) 0;
 }
 
+pre {
+    font-family: var(--font-main);
+}
+
 a,
 pre a {
     color: var(--color-link);
