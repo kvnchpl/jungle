@@ -80,32 +80,32 @@ pre a:hover {
 }
 
 .pre-top-left {
-    margin-top: var(--margin-pre);
-    margin-left: var(--margin-pre);
-    margin-bottom: 0;
-    margin-right: 0;
+    position: absolute;
+    top: var(--margin-pre);
+    left: var(--margin-pre);
+    margin: 0;
 }
 
 .pre-top-right {
-    margin-top: var(--margin-pre);
-    margin-right: var(--margin-pre);
-    margin-bottom: 0;
-    margin-left: 0;
+    position: absolute;
+    top: var(--margin-pre);
+    right: var(--margin-pre);
+    margin: 0;
     text-align: right;
 }
 
 .pre-bottom-left {
-    margin-bottom: var(--margin-pre);
-    margin-left: var(--margin-pre);
-    margin-top: 0;
-    margin-right: 0;
+    position: absolute;
+    bottom: var(--margin-pre);
+    left: var(--margin-pre);
+    margin: 0;
 }
 
 .pre-bottom-right {
-    margin-bottom: var(--margin-pre);
-    margin-right: var(--margin-pre);
-    margin-top: 0;
-    margin-left: 0;
+    position: absolute;
+    bottom: var(--margin-pre);
+    right: var(--margin-pre);
+    margin: 0;
     text-align: right;
 }
 
