@@ -1,4 +1,4 @@
-//giving up on the navigation arrows for now
+//giving up on the navigation arrows for now lol
 
 /*
 const historyKey = "jungleHistory";
