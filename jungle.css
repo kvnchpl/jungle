@@ -30,7 +30,6 @@ body {
 h1 {
     text-transform: uppercase;
     font-size: var(--font-size-h1);
-    letter-spacing: var(--letter-spacing-h1);
     font-family: var(--font-main);
     font-weight: var(--font-weight-bold);
     margin: 0 0 calc(var(--font-size-h1) / 2) 0;
@@ -58,5 +57,4 @@ pre a:hover {
     text-align: center;
     font-size: var(--font-size-centered-title);
     padding-top: var(--padding-centered-title);
-    letter-spacing: var(--letter-spacing-h1);
 }
