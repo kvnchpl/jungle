@@ -76,6 +76,7 @@ pre a:hover {
     font-family: var(--font-heading);
     font-size: var(--font-size-centered-title);
     color: var(--color-text);
+    text-transform: lowercase
 }
 
 #top-left-pre {
