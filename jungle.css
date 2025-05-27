@@ -142,7 +142,7 @@ pre a:hover,
 }
 
 .centered-title:hover {
-    color: var(--color-link-hover);
+    color: var(--color-title-hover);
 }
 
 .top-left {
