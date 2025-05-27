@@ -18,6 +18,9 @@
     --margin-body: 0;
     --padding-body: 0;
     --margin-pre: 2rem;
+    --max-width-img-small: 10vw;
+    --max-width-img-medium: 20vw;
+    --max-width-img-large: 50vw;
 
     --line-height: 1.6;
     --z-index-title: 2;
@@ -38,7 +41,9 @@ body {
     text-transform: lowercase;
     background-color: var(--color-bg);
     color: var(--color-text);
-    background-image: var(--background-image-home)
+    background-image: var(--background-image-home);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 body.no-bg-image {
@@ -62,6 +67,10 @@ h1 {
     font-weight: var(--font-weight-bold);
     text-transform: uppercase;
     margin: 0 0 calc(var(--font-size-h1) / 2) 0;
+}
+
+.img-medium {
+    max-width: var(--max-width-img-medium);
 }
 
 pre {
