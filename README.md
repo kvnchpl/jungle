@@ -40,3 +40,33 @@ To add a new node:
 Each page may also include its own `<meta>` tags for `title`, `description`, and `tags`.
 
 ---
+
+## Visualizing Page Connections
+
+To generate and update a graph of the connections between zine pages:
+
+1. **Install Graphviz** (if not already installed):
+
+    ```sh
+    brew install graphviz
+    ```
+
+2. **Run the visualization script** to generate the graph data:
+
+    ```sh
+    python3 visualize_links.py
+    ```
+
+    This creates a `zine_graph.dot` file describing the page connections.
+
+3. **Generate a PNG image of the graph**:
+
+    ```sh
+    dot -Tpng zine_graph.dot -o zine_graph.png
+    ```
+
+    The resulting `zine_graph.png` will show the structure and links between all pages.
+
+> Re-run these steps whenever you add or change links between pages to keep the graph up to date.
+
+---
