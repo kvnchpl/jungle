@@ -205,3 +205,13 @@ pre {
 .top.left {
     top: calc(var(--margin-pre) + 4rem);
 }
+
+.top,
+.bottom,
+.left,
+.right,
+.center,
+.center-x,
+.center-y {
+    position: absolute;
+}
