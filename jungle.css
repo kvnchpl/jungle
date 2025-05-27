@@ -262,7 +262,6 @@ pre {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: var(--padding-grid-item);
-    width: 100vw;
     box-sizing: border-box;
     padding: 0 var(--padding-grid-item);
 }
