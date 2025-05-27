@@ -129,16 +129,17 @@ pre a:hover,
     text-decoration: underline;
 }
 
-a:hover img {
-    box-shadow: 0 0 10px 4px var(--color-title-hover);
+a img {
+    animation: glowPulse 2.5s ease-in-out infinite;
     transition: box-shadow 0.3s ease-in-out;
+    border-radius: 4px;
 }
 
-a img:active,
-a img:focus {
-    outline: 2px solid var(--color-link);
-    box-shadow: 0 0 10px 4px var(--color-title-hover);
-    transition: box-shadow 0.2s ease;
+a:hover img,
+a:focus img,
+a:active img {
+    animation: none;
+    box-shadow: 0 0 20px 8px var(--color-title-hover);
 }
 
 .img-small {
@@ -264,6 +265,18 @@ pre {
     gap: var(--padding-grid-item);
     box-sizing: border-box;
     padding: 0 var(--padding-grid-item) 0 0;
+}
+
+@keyframes glowPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 4px 2px var(--color-title-hover);
+    }
+
+    50% {
+        box-shadow: 0 0 10px 5px var(--color-title-hover);
+    }
 }
 
 @media (max-width: 768px) {
