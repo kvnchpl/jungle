@@ -266,11 +266,6 @@ pre {
     padding: 0 var(--padding-grid-item);
 }
 
-.grid-item {
-    padding: var(--padding-grid-item);
-    font-family: var(--font-main);
-}
-
 .six-column-grid:nth-child(1) {
     transform: translateY(0);
 }
