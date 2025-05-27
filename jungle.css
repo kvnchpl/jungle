@@ -142,7 +142,7 @@ pre a:hover,
 
 .pre-top-left {
     position: absolute;
-    top: var(--margin-pre);
+    top: calc(var(--margin-pre) + 2rem);
     left: var(--margin-pre);
     margin: 0;
 }
