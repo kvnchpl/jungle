@@ -251,11 +251,37 @@ pre {
         grid-template-columns: 1fr;
     }
 
+    .img-small {
+        max-width: 30vw;
+    }
+
     .img-medium {
         max-width: 60vw;
     }
 
+    .img-large {
+        max-width: 90vw;
+    }
+
     .centered-title {
         font-size: clamp(2rem, 8vw, 5rem);
+    }
+
+    h1 {
+        font-size: clamp(1.5rem, 6vw, 3rem);
+    }
+
+    .back-button {
+        font-size: clamp(0.9rem, 3vw, 1.1rem);
+    }
+
+    .pre-small,
+    .pre-medium,
+    .pre-large {
+        font-size: clamp(0.7rem, 2.5vw, 1rem);
+    }
+
+    .grid-item {
+        padding: 0.5rem;
     }
 }
