@@ -113,8 +113,16 @@ pre a:hover,
     text-decoration: underline;
 }
 
+.img-small {
+    max-width: var(--max-width-img-small);
+}
+
 .img-medium {
     max-width: var(--max-width-img-medium);
+}
+
+.img-large {
+    max-width: var(--max-width-img-large);
 }
 
 .pre-bottom-left {
