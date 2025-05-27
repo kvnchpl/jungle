@@ -271,27 +271,27 @@ pre {
     font-family: var(--font-main);
 }
 
-.six-column-grid .grid-item:nth-child(1) {
+.six-column-grid:nth-child(1) {
     transform: translateY(0);
 }
 
-.six-column-grid .grid-item:nth-child(2) {
+.six-column-grid:nth-child(2) {
     transform: translateY(0.5rem);
 }
 
-.six-column-grid .grid-item:nth-child(3) {
+.six-column-grid:nth-child(3) {
     transform: translateY(1rem);
 }
 
-.six-column-grid .grid-item:nth-child(4) {
+.six-column-grid:nth-child(4) {
     transform: translateY(1.5rem);
 }
 
-.six-column-grid .grid-item:nth-child(5) {
+.six-column-grid:nth-child(5) {
     transform: translateY(2rem);
 }
 
-.six-column-grid .grid-item:nth-child(6) {
+.six-column-grid:nth-child(6) {
     transform: translateY(2.5rem);
 }
 
