@@ -141,6 +141,7 @@ pre a:hover,
     color: var(--color-text);
     text-transform: lowercase;
     z-index: var(--z-index-title);
+    cursor: default;
 }
 
 .centered-title:hover {
