@@ -86,7 +86,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: var(--height-body);
+    height: auto;
+    padding: 2rem 1rem;
     width: var(--width-body);
     box-sizing: border-box;
 }
@@ -248,5 +249,13 @@ pre {
 @media (max-width: 768px) {
     .six-column-grid {
         grid-template-columns: 1fr;
+    }
+
+    .img-medium {
+        max-width: 60vw;
+    }
+
+    .centered-title {
+        font-size: clamp(2rem, 8vw, 5rem);
     }
 }
