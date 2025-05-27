@@ -22,6 +22,7 @@
     --line-height: 1.6;
     --z-index-title: 2;
     --transition-body: background-image 0.5s ease-in-out;
+    --transition-title: color 0.3s ease-in-out;
     --background-image-home: url('a/i/jungle_1_bw_dark.png');
 }
 
@@ -149,6 +150,7 @@ pre a:hover,
     text-transform: lowercase;
     z-index: var(--z-index-title);
     cursor: default;
+    transition: var(--transition-title);
 }
 
 .centered-title:hover {
