@@ -184,6 +184,7 @@ pre a:hover,
 .centered-title:hover {
     color: var(--color-title-hover);
 }
+
 .bottom-left {
     position: absolute;
     bottom: var(--margin-pre);
