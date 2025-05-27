@@ -47,9 +47,8 @@ body {
     background-repeat: no-repeat;
 }
 
-body.no-bg-image {
+body.solid-bg {
     background-image: none;
-    background-color: var(--color-bg);
     transition: var(--transition-body);
 }
 

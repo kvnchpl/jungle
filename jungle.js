@@ -1,8 +1,8 @@
 const title = document.querySelector('.centered-title');
 const body = document.body;
 title.addEventListener('mouseenter', () => {
-    body.classList.add('no-bg-image');
+    body.classList.add('solid-bg');
 });
 title.addEventListener('mouseleave', () => {
-    body.classList.remove('no-bg-image');
+    body.classList.remove('solid-bg');
 });
