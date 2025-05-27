@@ -22,6 +22,7 @@
     --line-height: 1.6;
     --z-index-title: 2;
     --transition-body: background-image 0.5s ease-in-out;
+    --background-image-home: url('a/i/jungle_1_bw_dark.png');
 }
 
 body {
@@ -38,6 +39,12 @@ body {
     background-color: var(--color-bg);
     color: var(--color-text);
     transition: var(--transition-body);
+    background-image: var(--background-image-home)
+}
+
+body.no-bg-image {
+    background-image: none;
+    background-color: var(--color-bg);
 }
 
 main {

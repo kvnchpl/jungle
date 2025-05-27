@@ -1,11 +1,9 @@
 const title = document.querySelector('.centered-title');
 
 title.addEventListener('mouseenter', () => {
-    document.body.classList.add('fullscreen-image');
-    document.body.style.setProperty('--fullscreen-bg-image', "url('a/i/jungle_1_bw.png')");
+    document.body.classList.add('no-bg-image');
 });
 
 title.addEventListener('mouseleave', () => {
-    document.body.classList.remove('fullscreen-image');
-    document.body.style.removeProperty('--fullscreen-bg-image');
+    document.body.classList.remove('no-bg-image');
 });
