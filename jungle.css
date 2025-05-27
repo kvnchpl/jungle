@@ -21,7 +21,7 @@
 
     --line-height: 1.6;
     --z-index-title: 2;
-    --transition-body: background-image 0.5s ease-in-out;
+    --transition-body: opacity 0.8s ease-in-out;
     --transition-title: color 0.3s ease-in-out;
     --background-image-home: url('a/i/jungle_1_bw_dark.png');
 }
@@ -46,6 +46,23 @@ body {
 body.no-bg-image {
     background-image: none;
     background-color: var(--color-bg);
+}
+
+#bg-fade-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    pointer-events: none;
+    background-color: var(--color-bg);
+    opacity: 0;
+    transition: var(--transition-body);
+    z-index: -1;
+}
+
+body.no-bg-image #bg-fade-overlay {
+    opacity: 1;
 }
 
 main {
