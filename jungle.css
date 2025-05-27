@@ -60,7 +60,8 @@ pre {
 }
 
 a,
-pre a {
+pre a,
+.back-button {
     color: var(--color-link);
     text-transform: uppercase;
     text-decoration: none;
@@ -68,7 +69,8 @@ pre a {
 }
 
 a:hover,
-pre a:hover {
+pre a:hover,
+.back-button:hover {
     color: var(--color-link-hover);
     text-transform: inherit;
     text-decoration: underline;
@@ -86,16 +88,8 @@ pre a:hover {
     left: var(--margin-pre);
     background: none;
     border: none;
-    color: var(--color-link);
     font-family: var(--font-main);
     font-size: var(--font-size-base);
-    text-transform: uppercase;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-.back-button:hover {
-    color: var(--color-link-hover);
 }
 
 .pre-center {
