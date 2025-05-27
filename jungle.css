@@ -9,7 +9,9 @@
     /* Fonts */
     --font-heading: "Shrikhand", serif;
     --font-main: "Space Mono", monospace;
-    --font-size-base: clamp(1rem, 2vw, 1.25rem);
+    --font-size-small: clamp(0.8rem, 1.5vw, 1rem);
+    --font-size-medium: clamp(1rem, 2vw, 1.25rem);
+    --font-size-large: clamp(1.5rem, 3vw, 2rem);
     --font-size-centered-title: clamp(5rem, 10vw, 10vw);
     --font-size-h1: clamp(2.5rem, 8vw, 5rem);
     --font-weight-bold: 700;
@@ -43,7 +45,7 @@ body {
     margin: var(--margin-body);
     padding: var(--padding-body);
     font-family: var(--font-main);
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-medium);
     font-style: normal;
     font-weight: var(--font-weight-main);
     line-height: var(--line-height);
@@ -138,7 +140,7 @@ a:hover img {
     background: none;
     border: none;
     font-family: var(--font-main);
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-medium);
 }
 
 .centered-title {
@@ -167,6 +169,18 @@ a:hover img {
 
 pre {
     font-family: var(--font-main);
+}
+
+.pre-small {
+    font-size: var(--font-size-small);
+}
+
+.pre-medium {
+    font-size: var(--font-size-medium);
+}
+
+.pre-large {
+    font-size: var(--font-size-large);
 }
 
 .top {
