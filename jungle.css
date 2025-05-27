@@ -14,6 +14,9 @@
     --font-size-large: clamp(1.5rem, 3vw, 2rem);
     --font-size-centered-title: clamp(5rem, 10vw, 10rem);
     --font-size-h1: clamp(2.5rem, 8vw, 5rem);
+    --font-size-small-mobile: clamp(0.5rem, 1vw, 0.75rem);
+    --font-size-medium-mobile: clamp(0.75rem, 1vw, 1rem);
+    --font-size-large-mobile: clamp(1.25rem, 2vw, 1.75rem);
     --font-size-centered-title-mobile: clamp(5rem, 10vw, 10rem);
     --font-size-h1-mobile: clamp(1.5rem, 6vw, 3rem);
     --font-size-back-button-mobile: clamp(0.9rem, 3vw, 1.1rem);
@@ -295,10 +298,20 @@ pre {
         font-size: var(--font-size-back-button-mobile);
     }
 
-    .pre-small,
-    .pre-medium,
-    .pre-large {
+    pre {
         font-size: var(--font-size-pre-mobile);
+    }
+
+    .pre-small {
+        font-size: var(--font-size-small-mobile);
+    }
+
+    .pre-medium {
+        font-size: var(--font-size-medium-mobile);
+    }
+
+    .pre-large {
+        font-size: var(--font-size-large-mobile);
     }
 
     .grid-item {
