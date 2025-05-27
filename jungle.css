@@ -1,10 +1,12 @@
 :root {
+    /* Colors */
     --color-bg: #446A46;
     --color-link: #d7d419;
     --color-link-hover: #FFFDF6;
     --color-text: #FFFDF6;
     --color-title-hover: #8027c0;
 
+    /* Fonts */
     --font-heading: "Shrikhand", serif;
     --font-main: "Space Mono", monospace;
     --font-size-base: clamp(1rem, 2vw, 1.25rem);
@@ -13,20 +15,24 @@
     --font-weight-bold: 700;
     --font-weight-main: 400;
 
+    /* Sizing and layout */
     --height-body: 100vh;
     --width-body: 100vw;
     --margin-body: 0;
-    --padding-body: 0;
     --margin-pre: 2rem;
     --max-width-img-small: 10vw;
     --max-width-img-medium: 20vw;
     --max-width-img-large: 50vw;
-
+    --padding-body: 0;
     --line-height: 1.6;
     --z-index-title: 2;
+
+    /* Transitions */
     --transition-body-bg-color: background-color 0.8s ease-in-out;
     --transition-body-opacity: opacity 0.8s ease-in-out;
     --transition-title: color 0.3s ease-in-out;
+
+    /* Background images */
     --background-image-home: url('a/i/jungle_1_bw_dark.png');
 }
 
@@ -90,14 +96,6 @@ h1 {
     margin: 0 0 calc(var(--font-size-h1) / 2) 0;
 }
 
-.img-medium {
-    max-width: var(--max-width-img-medium);
-}
-
-pre {
-    font-family: var(--font-main);
-}
-
 a,
 pre a,
 .back-button {
@@ -115,23 +113,27 @@ pre a:hover,
     text-decoration: underline;
 }
 
-.fullscreen-image {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+.img-medium {
+    max-width: var(--max-width-img-medium);
 }
 
-.back-button {
+.pre-bottom-left {
     position: absolute;
-    top: var(--margin-pre);
+    bottom: var(--margin-pre);
     left: var(--margin-pre);
-    background: none;
-    border: none;
-    font-family: var(--font-main);
-    font-size: var(--font-size-base);
+    margin: 0;
 }
 
-.pre-center {
+.pre-bottom-right {
+    position: absolute;
+    bottom: var(--margin-pre);
+    right: var(--margin-pre);
+    margin: 0;
+    text-align: right;
+}
+
+.pre-center,
+.center {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -155,19 +157,14 @@ pre a:hover,
     text-align: right;
 }
 
-.pre-bottom-left {
+.back-button {
     position: absolute;
-    bottom: var(--margin-pre);
+    top: var(--margin-pre);
     left: var(--margin-pre);
-    margin: 0;
-}
-
-.pre-bottom-right {
-    position: absolute;
-    bottom: var(--margin-pre);
-    right: var(--margin-pre);
-    margin: 0;
-    text-align: right;
+    background: none;
+    border: none;
+    font-family: var(--font-main);
+    font-size: var(--font-size-base);
 }
 
 .centered-title {
@@ -188,22 +185,22 @@ pre a:hover,
     color: var(--color-title-hover);
 }
 
-.top-left {
+.bottom-center {
     position: absolute;
-    top: var(--margin-pre);
-    left: var(--margin-pre);
-}
-
-.top-center {
-    position: absolute;
-    top: var(--margin-pre);
+    bottom: var(--margin-pre);
     left: 50%;
     transform: translateX(-50%);
 }
 
-.top-right {
+.bottom-left {
     position: absolute;
-    top: var(--margin-pre);
+    bottom: var(--margin-pre);
+    left: var(--margin-pre);
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: var(--margin-pre);
     right: var(--margin-pre);
 }
 
@@ -214,13 +211,6 @@ pre a:hover,
     transform: translateY(-50%);
 }
 
-.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .middle-right {
     position: absolute;
     top: 50%;
@@ -228,21 +218,31 @@ pre a:hover,
     transform: translateY(-50%);
 }
 
-.bottom-left {
+.top-center {
     position: absolute;
-    bottom: var(--margin-pre);
-    left: var(--margin-pre);
-}
-
-.bottom-center {
-    position: absolute;
-    bottom: var(--margin-pre);
+    top: var(--margin-pre);
     left: 50%;
     transform: translateX(-50%);
 }
 
-.bottom-right {
+.top-left {
     position: absolute;
-    bottom: var(--margin-pre);
+    top: var(--margin-pre);
+    left: var(--margin-pre);
+}
+
+.top-right {
+    position: absolute;
+    top: var(--margin-pre);
     right: var(--margin-pre);
+}
+
+.fullscreen-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+pre {
+    font-family: var(--font-main);
 }
