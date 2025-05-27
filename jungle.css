@@ -164,40 +164,33 @@ pre {
 }
 
 .top {
-    position: absolute;
     top: var(--margin-pre);
 }
 
 .bottom {
-    position: absolute;
     bottom: var(--margin-pre);
 }
 
 .left {
-    position: absolute;
     left: var(--margin-pre);
 }
 
 .right {
-    position: absolute;
     right: var(--margin-pre);
 }
 
 .center-x {
-    position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .center-y {
-    position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .center,
 .center-x.center-y {
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
