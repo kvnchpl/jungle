@@ -21,6 +21,7 @@
 
     --line-height: 1.6;
     --z-index-title: 2;
+    --transition-body: background-image 0.5s ease-in-out;
 }
 
 body {
@@ -36,6 +37,7 @@ body {
     text-transform: lowercase;
     background-color: var(--color-bg);
     color: var(--color-text);
+    transition: var(--transition-body);
 }
 
 main {
@@ -143,6 +145,13 @@ pre a:hover,
 
 .centered-title:hover {
     color: var(--color-title-hover);
+}
+
+body.title-hover-bg {
+    background-image: url('a/i/jungle_1_bw.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .top-left {
