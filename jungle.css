@@ -80,6 +80,24 @@ pre a:hover {
     background-size: cover;
 }
 
+.back-button {
+    position: absolute;
+    top: var(--margin-pre);
+    left: var(--margin-pre);
+    background: none;
+    border: none;
+    color: var(--color-link);
+    font-family: var(--font-main);
+    font-size: var(--font-size-base);
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.back-button:hover {
+    color: var(--color-link-hover);
+}
+
 .pre-center {
     position: absolute;
     top: 50%;
