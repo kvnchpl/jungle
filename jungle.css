@@ -146,7 +146,7 @@ pre a:hover,
     user-select: none;
     -webkit-user-select: none;
     transition: var(--transition-title);
-    padding: 0.2em;
+    padding: 0 0.2em;
 }
 
 .centered-title:hover {
