@@ -211,3 +211,25 @@ pre {
 .center-y {
     position: absolute;
 }
+
+.six-column-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--font-main);
+}
+
+@media (max-width: 768px) {
+    .six-column-grid {
+        grid-template-columns: 1fr;
+    }
+}
