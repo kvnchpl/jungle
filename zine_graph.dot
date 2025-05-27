@@ -1,0 +1,8 @@
+digraph Zine {
+    "00006.html" -> "00005.html";
+    "00008.html" -> "00009.html";
+    "00005.html" -> "00006.html";
+    "index.html" -> "00009.html";
+    "index.html" -> "00005.html";
+    "index.html" -> "00008.html";
+}
