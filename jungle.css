@@ -29,9 +29,9 @@
     --max-width-img-small: 10vw;
     --max-width-img-medium: 20vw;
     --max-width-img-large: 50vw;
-    --max-width-img-small-mobile: 30vw;
-    --max-width-img-medium-mobile: 60vw;
-    --max-width-img-large-mobile: 90vw;
+    --max-width-img-small-mobile: 10vw;
+    --max-width-img-medium-mobile: 30vw;
+    --max-width-img-large-mobile: 50vw;
     --padding-body: 0;
     --padding-title: 0 0.2em;
     --pading-grid-item: 1rem;
