@@ -34,8 +34,10 @@ for _, tgt in edges:
 
 with open('zine_graph.dot', 'w') as f:
     f.write('digraph Zine {\n')
+    def label(name):
+        return name.replace('.html', '')
     for node in sorted(nodes):
-        f.write(f'    "{node}";\n')
+        f.write(f'    "{label(node)}";\n')
     for src, tgt in edges:
-        f.write(f'    "{src}" -> "{tgt}";\n')
+        f.write(f'    "{label(src)}" -> "{label(tgt)}";\n')
     f.write('}\n')
