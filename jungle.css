@@ -147,13 +147,6 @@ pre a:hover,
     color: var(--color-title-hover);
 }
 
-body.title-hover-bg {
-    background-image: url('a/i/jungle_1_bw.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .top-left {
     position: absolute;
     top: var(--margin-pre);
