@@ -3,6 +3,7 @@
     --color-link: #d7d419;
     --color-link-hover: #FFFDF6;
     --color-text: #FFFDF6;
+    --color-title-hover: #23df6e;
 
     --font-heading: "Shrikhand", serif;
     --font-main: "Space Mono", monospace;
@@ -138,6 +139,10 @@ pre a:hover,
     color: var(--color-text);
     text-transform: lowercase;
     z-index: var(--z-index-title);
+}
+
+.centered-title:hover {
+    color: var(--color-link-hover);
 }
 
 .top-left {
