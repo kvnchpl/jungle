@@ -79,6 +79,15 @@ pre a:hover {
     background-size: cover;
 }
 
+.pre-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-align: center;
+}
+
 .pre-top-left {
     position: absolute;
     top: var(--margin-pre);
