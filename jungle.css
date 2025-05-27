@@ -189,6 +189,8 @@ a img:focus {
 
 pre {
     font-family: var(--font-main);
+    max-width: 90vw;
+    box-sizing: border-box;
 }
 
 .pre-small {
