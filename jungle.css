@@ -128,7 +128,6 @@ pre a:hover {
     z-index: var(--z-index-title);
 }
 
-/* Generic Placement Utilities */
 .top-left {
     position: absolute;
     top: var(--margin-pre);
