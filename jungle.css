@@ -14,6 +14,10 @@
     --font-size-large: clamp(1.5rem, 3vw, 2rem);
     --font-size-centered-title: clamp(5rem, 10vw, 10vw);
     --font-size-h1: clamp(2.5rem, 8vw, 5rem);
+    --font-size-centered-title-mobile: clamp(2rem, 8vw, 5rem);
+    --font-size-h1-mobile: clamp(1.5rem, 6vw, 3rem);
+    --font-size-back-button-mobile: clamp(0.9rem, 3vw, 1.1rem);
+    --font-size-pre-mobile: clamp(0.7rem, 2.5vw, 1rem);
     --font-weight-bold: 700;
     --font-weight-main: 400;
 
@@ -25,8 +29,13 @@
     --max-width-img-small: 10vw;
     --max-width-img-medium: 20vw;
     --max-width-img-large: 50vw;
+    --max-width-img-small-mobile: 30vw;
+    --max-width-img-medium-mobile: 60vw;
+    --max-width-img-large-mobile: 90vw;
     --padding-body: 0;
     --padding-title: 0 0.2em;
+    --pading-grid-item: 1rem;
+    --padding-grid-item-mobile: 0.5rem;
     --line-height: 1.6;
     --z-index-title: 2;
 
@@ -236,13 +245,13 @@ pre {
 .six-column-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 1rem;
+    gap: var(--padding-grid-item);
     width: 100vw;
     box-sizing: border-box;
 }
 
 .grid-item {
-    padding: 1rem;
+    padding: var(--padding-grid-item);
     font-family: var(--font-main);
 }
 
@@ -252,36 +261,36 @@ pre {
     }
 
     .img-small {
-        max-width: 30vw;
+        max-width: var(--max-width-img-small-mobile);
     }
 
     .img-medium {
-        max-width: 60vw;
+        max-width: var(--max-width-img-medium-mobile);
     }
 
     .img-large {
-        max-width: 90vw;
+        max-width: var(--max-width-img-large-mobile);
     }
 
     .centered-title {
-        font-size: clamp(2rem, 8vw, 5rem);
+        font-size: var(--font-size-centered-title-mobile);
     }
 
     h1 {
-        font-size: clamp(1.5rem, 6vw, 3rem);
+        font-size: var(--font-size-h1-mobile);
     }
 
     .back-button {
-        font-size: clamp(0.9rem, 3vw, 1.1rem);
+        font-size: var(--font-size-back-button-mobile);
     }
 
     .pre-small,
     .pre-medium,
     .pre-large {
-        font-size: clamp(0.7rem, 2.5vw, 1rem);
+        font-size: var(--font-size-pre-mobile);
     }
 
     .grid-item {
-        padding: 0.5rem;
+        padding: var(--padding-grid-item-mobile);
     }
 }
