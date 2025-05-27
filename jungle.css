@@ -201,6 +201,10 @@ pre {
     bottom: var(--margin-pre);
 }
 
+.offset-bottom {
+    bottom: calc(var(--margin-pre) + 4rem);
+}
+
 .left {
     left: var(--margin-pre);
     text-align: left;
