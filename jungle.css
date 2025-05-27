@@ -24,6 +24,7 @@
     --max-width-img-medium: 20vw;
     --max-width-img-large: 50vw;
     --padding-body: 0;
+    --padding-title: 0 0.2em;
     --line-height: 1.6;
     --z-index-title: 2;
 
@@ -32,6 +33,7 @@
     --transition-body-opacity: opacity 0.8s ease-in-out;
     --transition-title-color: color 0.3s ease-in-out;
     --transition-title-transform: transform 0.3s ease-in-out;
+    --transform-title-scale: scale(2);
 
     /* Background images */
     --background-image-home: url('a/i/jungle_1_bw_dark.png');
@@ -152,13 +154,13 @@ a:hover img {
     user-select: none;
     -webkit-user-select: none;
     transition: var(--transition-title-transform), var(--transition-title-color);
-    padding: 0 0.2em;
+    padding: var(--padding-title);
     transform-origin: center center;
 }
 
 .centered-title:hover {
     color: var(--color-title-hover);
-    transform: scale(2);
+    transform: var(--transform-title-scale);
 }
 
 .fullscreen-image {
