@@ -157,7 +157,6 @@ a:hover img {
 
 .centered-title:hover {
     color: var(--color-title-hover);
-    transform: var(--transform-title-scale);
 }
 
 .fullscreen-image {
