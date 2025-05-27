@@ -113,6 +113,11 @@ pre a:hover,
     text-decoration: underline;
 }
 
+a:hover img {
+    box-shadow: 0 0 10px 4px var(--color-title-hover);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
 .img-small {
     max-width: var(--max-width-img-small);
 }
