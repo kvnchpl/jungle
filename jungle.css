@@ -48,23 +48,6 @@ body.no-bg-image {
     background-color: var(--color-bg);
 }
 
-#bg-fade-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    pointer-events: none;
-    background-color: var(--color-bg);
-    opacity: 0;
-    transition: var(--transition-body);
-    z-index: -1;
-}
-
-body.no-bg-image #bg-fade-overlay {
-    opacity: 1;
-}
-
 main {
     display: flex;
     flex-direction: column;
