@@ -314,6 +314,10 @@ pre {
         font-size: var(--font-size-large-mobile);
     }
 
+    .top {
+        top: calc(var(--margin-pre) + 4rem);
+    }
+
     .grid-item {
         padding: var(--padding-grid-item-mobile);
     }
