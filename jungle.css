@@ -173,10 +173,12 @@ pre {
 
 .left {
     left: var(--margin-pre);
+    text-align: left;
 }
 
 .right {
     right: var(--margin-pre);
+    text-align: right;
 }
 
 .center-x {
