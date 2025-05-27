@@ -153,67 +153,6 @@ pre a:hover,
     color: var(--color-title-hover);
 }
 
-.bottom-left {
-    position: absolute;
-    bottom: var(--margin-pre);
-    left: var(--margin-pre);
-}
-
-.bottom-center {
-    position: absolute;
-    bottom: var(--margin-pre);
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.bottom-right {
-    position: absolute;
-    bottom: var(--margin-pre);
-    right: var(--margin-pre);
-}
-
-.center-left {
-    position: absolute;
-    top: 50%;
-    left: var(--margin-pre);
-    transform: translateY(-50%);
-}
-
-.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    text-align: center;
-}
-
-.center-right {
-    position: absolute;
-    top: 50%;
-    right: var(--margin-pre);
-    transform: translateY(-50%);
-}
-
-.top-left {
-    position: absolute;
-    top: var(--margin-pre);
-    left: var(--margin-pre);
-}
-
-.top-center {
-    position: absolute;
-    top: var(--margin-pre);
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.top-right {
-    position: absolute;
-    top: var(--margin-pre);
-    right: var(--margin-pre);
-}
-
 .fullscreen-image {
     background-repeat: no-repeat;
     background-position: center center;
@@ -222,4 +161,40 @@ pre a:hover,
 
 pre {
     font-family: var(--font-main);
+}
+
+.absolute {
+    position: absolute;
+}
+
+.top {
+    top: var(--margin-pre);
+}
+
+.bottom {
+    bottom: var(--margin-pre);
+}
+
+.left {
+    left: var(--margin-pre);
+}
+
+.right {
+    right: var(--margin-pre);
+}
+
+.center-x {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.center-y {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
