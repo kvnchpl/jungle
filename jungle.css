@@ -12,9 +12,9 @@
     --font-size-small: clamp(0.8rem, 1.5vw, 1rem);
     --font-size-medium: clamp(1rem, 2vw, 1.25rem);
     --font-size-large: clamp(1.5rem, 3vw, 2rem);
-    --font-size-centered-title: clamp(5rem, 10vw, 10vw);
+    --font-size-centered-title: clamp(5rem, 10vw, 10rem);
     --font-size-h1: clamp(2.5rem, 8vw, 5rem);
-    --font-size-centered-title-mobile: clamp(2rem, 8vw, 5rem);
+    --font-size-centered-title-mobile: clamp(5rem, 10vw, 10rem);
     --font-size-h1-mobile: clamp(1.5rem, 6vw, 3rem);
     --font-size-back-button-mobile: clamp(0.9rem, 3vw, 1.1rem);
     --font-size-pre-mobile: clamp(0.7rem, 2.5vw, 1rem);
