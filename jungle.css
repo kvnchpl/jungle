@@ -150,6 +150,8 @@ pre a:hover,
     text-transform: lowercase;
     z-index: var(--z-index-title);
     cursor: default;
+    user-select: none;
+    -webkit-user-select: none;
     transition: var(--transition-title);
 }
 
