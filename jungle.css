@@ -184,18 +184,17 @@ pre a:hover,
 .centered-title:hover {
     color: var(--color-title-hover);
 }
+.bottom-left {
+    position: absolute;
+    bottom: var(--margin-pre);
+    left: var(--margin-pre);
+}
 
 .bottom-center {
     position: absolute;
     bottom: var(--margin-pre);
     left: 50%;
     transform: translateX(-50%);
-}
-
-.bottom-left {
-    position: absolute;
-    bottom: var(--margin-pre);
-    left: var(--margin-pre);
 }
 
 .bottom-right {
@@ -218,17 +217,17 @@ pre a:hover,
     transform: translateY(-50%);
 }
 
+.top-left {
+    position: absolute;
+    top: var(--margin-pre);
+    left: var(--margin-pre);
+}
+
 .top-center {
     position: absolute;
     top: var(--margin-pre);
     left: 50%;
     transform: translateX(-50%);
-}
-
-.top-left {
-    position: absolute;
-    top: var(--margin-pre);
-    left: var(--margin-pre);
 }
 
 .top-right {
