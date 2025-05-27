@@ -30,7 +30,8 @@
     /* Transitions */
     --transition-body-bg-color: background-color 0.8s ease-in-out;
     --transition-body-opacity: opacity 0.8s ease-in-out;
-    --transition-title: color 0.3s ease-in-out;
+    --transition-title-color: color 0.3s ease-in-out;
+    --transition-title-transform: transform 0.3s ease-in-out;
 
     /* Background images */
     --background-image-home: url('a/i/jungle_1_bw_dark.png');
@@ -150,12 +151,14 @@ a:hover img {
     cursor: default;
     user-select: none;
     -webkit-user-select: none;
-    transition: var(--transition-title);
+    transition: var(--transition-title-transform), var(--transition-title-color);
     padding: 0 0.2em;
+    transform-origin: center center;
 }
 
 .centered-title:hover {
     color: var(--color-title-hover);
+    transform: scale(2);
 }
 
 .fullscreen-image {
