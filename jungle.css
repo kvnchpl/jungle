@@ -32,8 +32,6 @@
     --transition-body-bg-color: background-color 0.8s ease-in-out;
     --transition-body-opacity: opacity 0.8s ease-in-out;
     --transition-title-color: color 0.3s ease-in-out;
-    --transition-title-transform: transform 0.3s ease-in-out;
-    --transform-title-scale: scale(2);
 
     /* Background images */
     --background-image-home: url('a/i/jungle_1_bw_dark.png');
@@ -153,9 +151,8 @@ a:hover img {
     cursor: default;
     user-select: none;
     -webkit-user-select: none;
-    transition: var(--transition-title-transform), var(--transition-title-color);
+    transition: var(--transition-title-color);
     padding: var(--padding-title);
-    transform-origin: center center;
 }
 
 .centered-title:hover {
