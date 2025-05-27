@@ -264,6 +264,7 @@ pre {
     gap: var(--padding-grid-item);
     width: 100vw;
     box-sizing: border-box;
+    padding: 0 var(--padding-grid-item);
 }
 
 .grid-item {
