@@ -37,8 +37,8 @@
     --max-width-img-large-mobile: 50vw;
     --padding-body: 0;
     --padding-title: 0 0.2em;
-    --padding-grid-item: 1rem;
-    --padding-grid-item-mobile: 0.5rem;
+    --padding-grid-item: 2rem;
+    --padding-grid-item-mobile: 1rem;
     --line-height: 1.6;
     --z-index-title: 2;
 
@@ -263,7 +263,7 @@ pre {
     grid-template-columns: repeat(6, 1fr);
     gap: var(--padding-grid-item);
     box-sizing: border-box;
-    padding: 0 calc(var(--padding-grid-item) * 2);
+    padding: 0 var(--padding-grid-item);
 }
 
 .grid-item {
