@@ -357,6 +357,7 @@ pre {
     }
 
     .three-by-three-grid>div {
+        min-height: 20vh;
         grid-area: unset;
         justify-content: center;
         align-items: center;
