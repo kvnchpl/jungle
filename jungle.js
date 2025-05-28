@@ -11,10 +11,10 @@ if (title) {
     // If hover text exists, toggle its visibility when the title is hovered.
     if (hoverText) {
         title.addEventListener('mouseenter', () => {
-            hoverText.classList.add('hober-revealed');
+            hoverText.classList.add('hover-revealed');
         });
         title.addEventListener('mouseleave', () => {
-            hoverText.classList.remove('hober-revealed');
+            hoverText.classList.remove('hover-revealed');
         });
     }
 }
