@@ -36,9 +36,11 @@
     --max-width-img-medium-mobile: 30vw;
     --max-width-img-large-mobile: 50vw;
     --padding-body: 0;
+    --padding-main: 2rem 1rem;
     --padding-title: 0 0.2em;
     --padding-grid-item: 2rem;
     --padding-grid-item-mobile: 1rem;
+    --offset-top-extra: 4rem;
     --line-height: 1.6;
     --z-index-title: 2;
 
@@ -47,8 +49,14 @@
     --transition-body-opacity: opacity 0.8s ease-in-out;
     --transition-title-color: color 0.3s ease-in-out;
 
-    /* Background images */
+    /* Background Images */
     --background-image-home: url('a/i/jungle_diffusion_3.png');
+
+    /* Glow Effect */
+    --glow-small: 4px;
+    --glow-medium: 2px;
+    --glow-large: 8px;
+
 }
 
 body {
@@ -101,7 +109,7 @@ main {
     align-items: center;
     justify-content: center;
     height: auto;
-    padding: 2rem 1rem;
+    padding: var(--padding-main);
     width: var(--width-body);
     box-sizing: border-box;
 }
@@ -145,7 +153,7 @@ a:hover img,
 a:focus img,
 a:active img {
     animation: none;
-    box-shadow: 0 0 20px 8px var(--color-title-hover);
+    box-shadow: 0 0 var(--glow-large) var(--color-title-hover);
 }
 
 .img-small {
@@ -230,7 +238,7 @@ pre {
 }
 
 .offset-bottom {
-    bottom: calc(var(--margin-pre) + 4rem);
+    bottom: calc(var(--margin-pre) + var(--offset-top-extra));
 }
 
 .left {
@@ -261,7 +269,7 @@ pre {
 }
 
 .top.left {
-    top: calc(var(--margin-pre) + 4rem);
+    top: calc(var(--margin-pre) + var(--offset-top-extra));
 }
 
 .top,
@@ -286,11 +294,11 @@ pre {
 
     0%,
     100% {
-        box-shadow: 0 0 4px 2px var(--color-title-hover);
+        box-shadow: 0 0 var(--glow-small) var(--glow-medium) var(--color-title-hover);
     }
 
     50% {
-        box-shadow: 0 0 10px 5px var(--color-title-hover);
+        box-shadow: 0 0 calc(var(--glow-small) * 2) calc(var(--glow-medium) * 2) var(--color-title-hover);
     }
 }
 
@@ -300,7 +308,7 @@ pre {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        padding: 2rem 1rem;
+        padding: var(--padding-main);
         gap: 2rem;
         position: relative;
     }
@@ -321,7 +329,7 @@ pre {
         position: static;
         transform: none;
         text-align: center;
-        margin-top: 1rem;
+        margin-top: var(--margin-body);
         opacity: 1;
     }
 
@@ -370,7 +378,7 @@ pre {
     }
 
     .top {
-        top: calc(var(--margin-pre) + 4rem);
+        top: calc(var(--margin-pre) + var(--offset-top-extra));
     }
 
     .grid-item {
