@@ -286,7 +286,7 @@ a:active img {
 }
 
 .centered-title:hover {
-    color: var(--color-title-hover);
+    opacity: 0;
 }
 
 .fullscreen-image {
