@@ -46,7 +46,8 @@
     --column-gap-grid-mobile: 4vw;
     --offset-top-extra: 4rem;
     --line-height: 1.6;
-    --z-index-title: 2;
+    --z-index-back-button: 2;
+    --z-index-title: 3;
 
     /* Transitions */
     --transition-body-bg-color: background-color 0.8s ease-in-out;
