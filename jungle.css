@@ -48,6 +48,7 @@
     --transition-body-bg-color: background-color 0.8s ease-in-out;
     --transition-body-opacity: opacity 0.8s ease-in-out;
     --transition-title-color: color 0.3s ease-in-out;
+    --transition-title-opacity: opacity 0.3s ease-in-out;
 
     /* Background Images */
     --background-image-home: url('a/i/jungle_diffusion_3.png');
@@ -278,7 +279,7 @@ a:active img {
     cursor: default;
     user-select: none;
     -webkit-user-select: none;
-    transition: var(--transition-title-color);
+    transition: var(--transition-title-opacity);
     margin: 0 auto;
     padding: var(--padding-title);
     max-width: none;
