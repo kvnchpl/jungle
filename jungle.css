@@ -128,8 +128,6 @@ body.has-inline-bg::before {
 
 .three-by-three-grid>div {
     display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100%;
     width: 100%;
 }
