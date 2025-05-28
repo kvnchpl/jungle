@@ -87,6 +87,8 @@ body::before {
     z-index: -1;
     opacity: 1;
     transition: var(--transition-body-opacity);
+    background-image: var(--background-image-home);
+    content: "";
 }
 
 body.solid-bg::before {
