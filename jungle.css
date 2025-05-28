@@ -119,6 +119,7 @@ body.has-inline-bg::before {
     box-sizing: border-box;
     position: relative;
     gap: var(--padding-grid-item);
+    padding: var(--padding-grid-item);
 }
 
 .three-by-three-grid > div {
