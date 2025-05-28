@@ -93,10 +93,17 @@ body::before {
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
-    opacity: 1;
+    opacity: 0;
     transition: var(--transition-body-opacity);
-    background-image: var(--background-image-home);
+    content: none;
+    pointer-events: none;
+}
+
+body.use-default-bg::before {
     content: "";
+    background-image: var(--background-image-home);
+    opacity: 1;
+    pointer-events: none;
 }
 
 body.solid-bg::before {

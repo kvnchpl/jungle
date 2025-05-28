@@ -32,7 +32,7 @@ const computedBg = getComputedStyle(body).getPropertyValue("background-image");
 
 // Apply default background image if none is set, otherwise mark as using a custom background.
 if (!computedBg || computedBg === 'none' || computedBg === 'initial') {
-    body.style.backgroundImage = getComputedStyle(document.documentElement).getPropertyValue('--background-image-home');
+    body.classList.add('use-default-bg');
 } else {
     body.classList.add('custom-bg');
 }
