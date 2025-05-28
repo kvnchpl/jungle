@@ -125,8 +125,9 @@ body.has-inline-bg::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-height: 100%;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .three-by-three-grid img {
@@ -270,6 +271,8 @@ a:active img {
     transition: var(--transition-title-color);
     margin: 0 auto;
     padding: var(--padding-title);
+    max-width: none;
+    overflow: visible;
 }
 
 .centered-title:hover {
