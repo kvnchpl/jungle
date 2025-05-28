@@ -330,6 +330,8 @@ pre {
     .hover-reveal-text {
         position: static !important;
         transform: none !important;
+        bottom: auto !important;
+        left: auto !important;
         margin-top: 2rem;
         text-align: left;
         padding: 2rem 1rem;
