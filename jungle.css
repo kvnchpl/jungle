@@ -73,7 +73,7 @@ body.solid-bg {
     transition: var(--transition-body-bg-color);
 }
 
-body::before {
+body.home::before {
     content: "";
     position: fixed;
     top: 0;
