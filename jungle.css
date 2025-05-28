@@ -40,8 +40,8 @@
     --padding-title: 0 0.2em;
     --padding-grid-item: 2rem;
     --padding-grid-item-mobile: 1rem;
-    --row-gap-grid: 10vh;
-    --column-gap-grid: 10vw;
+    --row-gap-grid: 2vh;
+    --column-gap-grid: 2vw;
     --offset-top-extra: 4rem;
     --line-height: 1.6;
     --z-index-title: 2;
