@@ -203,13 +203,16 @@ a:active img {
 }
 
 .hover-reveal-text {
+    display: block;
+    margin: 2rem auto;
+    padding: 2rem 1rem;
     max-width: 90vw;
     text-align: left;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
-.centered-title:hover ~ .info-block-container .hover-reveal-text {
+.centered-title:hover~.hover-reveal-text {
     opacity: 1;
 }
 
@@ -290,13 +293,6 @@ pre {
     gap: var(--padding-grid-item);
     box-sizing: border-box;
     padding: 0 var(--padding-grid-item) 0 0;
-}
-
-.info-block-container {
-    display: flex;
-    justify-content: center;
-    padding: 2rem 1rem;
-    width: 100%;
 }
 
 @keyframes glow-pulse {
