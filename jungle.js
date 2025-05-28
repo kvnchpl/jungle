@@ -1,14 +1,13 @@
 const computedBg = getComputedStyle(body).getPropertyValue("background-image");
+const body = document.body;
+const title = document.querySelector('.centered-title');
+const hoverText = document.querySelector('.hover-reveal-text');
 
 if (!computedBg || computedBg === 'none' || computedBg === 'initial') {
     body.style.backgroundImage = getComputedStyle(document.documentElement).getPropertyValue('--background-image-home');
 } else {
     body.classList.add('custom-bg');
 }
-
-const body = document.body;
-const title = document.querySelector('.centered-title');
-const hoverText = document.querySelector('.hover-reveal-text');
 
 if (title) {
     title.addEventListener('mouseenter', () => body.classList.add('solid-bg'));
