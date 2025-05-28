@@ -122,11 +122,11 @@ body.has-inline-bg::before {
     padding: var(--padding-grid-item);
 }
 
-.three-by-three-grid > div {
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.three-by-three-grid>div * {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    box-sizing: border-box;
 }
 
 .grid-tl {
