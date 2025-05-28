@@ -1,4 +1,3 @@
-// Get references to key DOM elements.
 const body = document.body;
 const title = document.querySelector('.centered-title');
 const hoverText = document.querySelector('.hover-reveal-text');
