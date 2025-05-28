@@ -114,6 +114,10 @@ h1 {
     margin: 0 0 calc(var(--font-size-h1) / 2) 0;
 }
 
+uppercase {
+    text-transform: uppercase;
+}
+
 a,
 pre a,
 .back-button {
