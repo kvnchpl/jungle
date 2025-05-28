@@ -153,7 +153,7 @@ a:hover img,
 a:focus img,
 a:active img {
     animation: none;
-    box-shadow: 0 0 calc(var(--glow-small) * 2) calc(var(--glow-medium) * 2) var(--color-title-hover);
+    box-shadow: 0 0 var(--glow-large) var(--glow-large) var(--color-title-hover);
 }
 
 .img-small {
@@ -302,11 +302,11 @@ pre {
 
     0%,
     100% {
-        box-shadow: 0 0 var(--glow-small) var(--glow-medium) var(--color-title-hover);
+        box-shadow: 0 0 var(--glow-small) var(--glow-small) var(--color-title-hover);
     }
 
     50% {
-        box-shadow: 0 0 calc(var(--glow-small) * 2) calc(var(--glow-medium) * 2) var(--color-title-hover);
+        box-shadow: 0 0 var(--glow-medium) var(--glow-medium) var(--color-title-hover);
     }
 }
 
