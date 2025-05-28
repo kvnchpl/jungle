@@ -40,6 +40,8 @@
     --padding-title: 0 0.2em;
     --padding-grid-item: 2rem;
     --padding-grid-item-mobile: 1rem;
+    --row-gap-grid: 10vh;
+    --column-gap-grid: 10vw;
     --offset-top-extra: 4rem;
     --line-height: 1.6;
     --z-index-title: 2;
@@ -117,7 +119,8 @@ body.has-inline-bg::before {
     height: 100vh;
     box-sizing: border-box;
     position: relative;
-    gap: var(--padding-grid-item);
+    row-gap: var(--row-gap-grid);
+    column-gap: var(--column-gap-grid);
     padding: var(--padding-grid-item);
 }
 
