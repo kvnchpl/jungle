@@ -297,9 +297,6 @@ a:active img {
 
 .hover-reveal-text {
     display: block;
-    margin: 2rem auto;
-    padding: 2rem 1rem;
-    max-width: 90vw;
     text-align: left;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
