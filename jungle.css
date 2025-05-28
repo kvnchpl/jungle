@@ -137,7 +137,7 @@ body.has-inline-bg::before {
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 100%;
+    width: auto;
 }
 
 .three-by-three-grid img {
