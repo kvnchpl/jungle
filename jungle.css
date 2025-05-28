@@ -42,6 +42,8 @@
     --padding-grid-item-mobile: 4rem;
     --row-gap-grid: 2vh;
     --column-gap-grid: 2vw;
+    --row-gap-grid-mobile: 4vh;
+    --column-gap-grid-mobile: 4vw;
     --offset-top-extra: 4rem;
     --line-height: 1.6;
     --z-index-title: 2;
@@ -355,7 +357,8 @@ pre {
         align-items: center;
         justify-content: flex-start;
         height: auto;
-        gap: var(--row-gap-grid);
+        row-gap: var(--row-gap-grid-mobile);
+        column-gap: var(--column-gap-grid-mobile);
         padding: var(--padding-grid-item-mobile);
     }
 
