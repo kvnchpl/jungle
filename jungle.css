@@ -328,6 +328,12 @@ pre {
     }
 
     .hover-reveal-text {
+        position: static !important;
+        transform: none !important;
+        margin-top: 2rem;
+        text-align: left;
+        padding: 2rem 1rem;
+        max-width: 90vw;
         opacity: 1;
     }
 
