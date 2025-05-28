@@ -313,24 +313,14 @@ pre {
         position: relative;
     }
 
-    .top,
-    .left,
-    .right,
-    .offset-bottom,
-    .bottom,
-    .center-x,
-    .centered-title {
-        position: static;
-        transform: none;
-        text-align: center;
-    }
-
     .hover-reveal-text {
-        position: static;
-        transform: none;
+        display: block;
+        width: 100%;
         text-align: center;
         margin-top: var(--margin-body);
         opacity: 1;
+        position: relative;
+        z-index: 1;
     }
 
     .six-column-grid {
