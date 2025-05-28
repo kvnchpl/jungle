@@ -97,7 +97,7 @@ body::before {
     pointer-events: none;
     transition: var(--transition-body-opacity);
     opacity: 1;
-    background-image: var(--background-image-home);
+    background-image: var(--background-image-home); /* Default image */
 }
 
 body.custom-bg::before {
