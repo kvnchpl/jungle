@@ -125,6 +125,7 @@ body.has-inline-bg::before {
     row-gap: var(--row-gap-grid);
     column-gap: var(--column-gap-grid);
     padding: var(--padding-grid-item);
+    padding-top: calc(var(--margin-pre) + var(--padding-grid-item));
 }
 
 .three-by-three-grid>div {
@@ -298,8 +299,6 @@ a:active img {
     transition: opacity 0.5s ease-in-out;
 }
 
-
-
 pre {
     font-family: var(--font-main);
     max-width: 90vw;
@@ -318,7 +317,6 @@ pre {
     font-size: var(--font-size-large);
 }
 
-
 .back-button {
     position: absolute;
     top: var(--margin-pre);
@@ -328,14 +326,6 @@ pre {
     font-family: var(--font-main);
     font-size: var(--font-size-medium);
     z-index: var(--z-index-back-button)
-}
-
-.six-column-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: var(--padding-grid-item);
-    box-sizing: border-box;
-    padding: 0 var(--padding-grid-item) 0 0;
 }
 
 @keyframes glow-pulse {
@@ -360,6 +350,7 @@ pre {
         row-gap: var(--row-gap-grid-mobile);
         column-gap: var(--column-gap-grid-mobile);
         padding: var(--padding-grid-item-mobile);
+        padding-top: calc(var(--margin-pre) + var(--padding-grid-item-mobile));
     }
 
     .three-by-three-grid>div {
@@ -385,10 +376,6 @@ pre {
 
     .hover-reveal-text {
         opacity: 1;
-    }
-
-    .six-column-grid {
-        grid-template-columns: 1fr;
     }
 
     .img-small {
