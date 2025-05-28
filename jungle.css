@@ -120,13 +120,18 @@ body.has-inline-bg::before {
     padding: var(--padding-grid-item);
 }
 
-.three-by-three-grid>div,
-.three-by-three-grid>div>a {
+.three-by-three-grid>div {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-height: 100%;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.three-by-three-grid>div>a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .three-by-three-grid img {
