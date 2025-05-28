@@ -1,23 +1,23 @@
 const body = document.body;
+
 const inlineBg = body.getAttribute('style');
-if (inlineBg && inlineBg.includes('background-image')) {
+if (inlineBg?.includes('background-image')) {
     body.classList.add('has-inline-bg');
 }
+
 const title = document.querySelector('.centered-title');
+if (!title) return;
+
 const hoverText = document.querySelector('.hover-reveal-text');
 
-// If a centered title exists, enable background and hover text interactions.
-if (title) {
-    // Change background to solid color on hover, and revert on mouse leave.
-    title.addEventListener('mouseenter', () => body.classList.add('solid-bg'));
-    title.addEventListener('mouseleave', () => body.classList.remove('solid-bg'));
-    // If hover text exists, toggle its visibility when the title is hovered.
-    if (hoverText) {
-        title.addEventListener('mouseenter', () => {
-            hoverText.classList.add('hover-revealed');
-        });
-        title.addEventListener('mouseleave', () => {
-            hoverText.classList.remove('hover-revealed');
-        });
-    }
+// Handle hover behavior on title
+const toggleSolidBg = (e) => body.classList.toggle('solid-bg', e.type === 'mouseenter');
+title.addEventListener('mouseenter', toggleSolidBg);
+title.addEventListener('mouseleave', toggleSolidBg);
+
+// Handle hover text visibility if present
+if (hoverText) {
+    const toggleHoverText = (e) => hoverText.classList.toggle('hover-revealed', e.type === 'mouseenter');
+    title.addEventListener('mouseenter', toggleHoverText);
+    title.addEventListener('mouseleave', toggleHoverText);
 }
