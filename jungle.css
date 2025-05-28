@@ -118,6 +118,7 @@ body.has-inline-bg::before {
     max-height: 1000vh;
     box-sizing: border-box;
     position: relative;
+    gap: var(--padding-grid-item);
 }
 
 .three-by-three-grid > div {
