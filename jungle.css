@@ -144,7 +144,7 @@ pre a:hover,
 }
 
 a img {
-    animation: glowPulse 2.5s ease-in-out infinite;
+    animation: glow-pulse 2.5s ease-in-out infinite;
     transition: box-shadow 0.3s ease-in-out;
     border-radius: 4px;
 }
@@ -299,7 +299,7 @@ pre {
     width: 100%;
 }
 
-@keyframes glowPulse {
+@keyframes glow-pulse {
 
     0%,
     100% {
