@@ -66,6 +66,8 @@ body {
     color: var(--color-text);
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: var(--background-image-home);
+    background-position: center;
 }
 
 body.solid-bg {
@@ -74,13 +76,11 @@ body.solid-bg {
 }
 
 body.home::before {
-    content: "";
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-image: var(--background-image-home);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
