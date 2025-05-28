@@ -21,24 +21,13 @@ if (title) {
     }
 }
 
-// Store original inline background for restoration
-const originalBg = body.style.backgroundImage;
-
 // Apply background change effect when hovering over any link.
 document.querySelectorAll('a').forEach(link => {
     link.addEventListener('mouseenter', () => {
-        if (body.classList.contains('custom-bg')) {
-            body.style.backgroundImage = 'none';
-        } else {
-            body.classList.add('solid-bg');
-        }
+        body.classList.add('solid-bg');
     });
     link.addEventListener('mouseleave', () => {
-        if (body.classList.contains('custom-bg')) {
-            body.style.backgroundImage = originalBg;
-        } else {
-            body.classList.remove('solid-bg');
-        }
+        body.classList.remove('solid-bg');
     });
 });
 
@@ -50,4 +39,5 @@ if (!computedBg || computedBg === 'none' || computedBg === 'initial') {
     body.classList.add('use-default-bg');
 } else {
     body.classList.add('custom-bg');
+    body.style.setProperty('--custom-background-image', computedBg);
 }
