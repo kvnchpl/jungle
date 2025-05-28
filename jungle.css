@@ -319,6 +319,7 @@ pre {
         min-height: 100vh;
     }
 
+    /* 
     .top,
     .left,
     .right,
@@ -329,6 +330,7 @@ pre {
         transform: none;
         text-align: center;
     }
+    */
 
     .centered-title {
         position: absolute;
