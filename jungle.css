@@ -114,18 +114,22 @@ body.has-inline-bg::before {
     content: none;
 }
 
+.layout {
+    width: 100vw;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: var(--padding-grid-item);
+    padding-top: calc(var(--margin-pre) + var(--padding-grid-item));
+}
+
 .three-by-three-grid {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     grid-template-rows: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-    width: 100vw;
     height: 100vh;
-    box-sizing: border-box;
     position: relative;
     row-gap: var(--row-gap-grid);
     column-gap: var(--column-gap-grid);
-    padding: var(--padding-grid-item);
-    padding-top: calc(var(--margin-pre) + var(--padding-grid-item));
 }
 
 .three-by-three-grid>div {
@@ -225,11 +229,6 @@ body.has-inline-bg::before {
     align-items: center;
     justify-content: flex-start;
     gap: 4vh;
-    padding: var(--padding-grid-item);
-    padding-top: calc(var(--margin-pre) + var(--padding-grid-item));
-    width: 100vw;
-    max-width: 100%;
-    box-sizing: border-box;
 }
 
 .flex-column pre {
