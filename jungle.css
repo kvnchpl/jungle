@@ -368,6 +368,11 @@ pre {
         flex: none;
     }
 
+    .three-by-three-grid img,
+    .three-by-three-grid iframe {
+        max-width: 60vw;
+    }
+
     .centered-title {
         position: static;
         transform: none;
