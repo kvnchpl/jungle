@@ -130,19 +130,20 @@ body.has-inline-bg::before {
     width: 100%;
 }
 
+.three-by-three-grid img,
+.three-by-three-grid > div > a {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    box-sizing: border-box;
+}
+
 .three-by-three-grid>div>a {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     margin: 0 auto;
-}
-
-.three-by-three-grid>div * {
-    height: 100%;
-    width: auto;
-    object-fit: contain;
-    box-sizing: border-box;
 }
 
 .three-by-three-grid img {
