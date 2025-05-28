@@ -1,21 +1,3 @@
-
-/* Hide the text by default on larger screens */
-.hover-reveal-text {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-/* Reveal it when the centered title is hovered */
-.centered-title:hover ~ .hover-reveal-text {
-    opacity: 1;
-}
-
-/* On mobile, always show the text */
-@media (max-width: 768px) {
-    .hover-reveal-text {
-        opacity: 1;
-    }
-}
 :root {
     /* Colors */
     --color-bg: #446A46;
@@ -208,6 +190,15 @@ a:active img {
     background-size: cover;
 }
 
+.hover-reveal-text {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.centered-title:hover~.hover-reveal-text {
+    opacity: 1;
+}
+
 pre {
     font-family: var(--font-main);
     max-width: 90vw;
@@ -300,6 +291,10 @@ pre {
 }
 
 @media (max-width: 768px) {
+    .hover-reveal-text {
+        opacity: 1;
+    }
+
     .six-column-grid {
         grid-template-columns: 1fr;
     }
