@@ -214,7 +214,7 @@ h1 {
     margin: 0 0 calc(var(--font-size-h1) / 2) 0;
 }
 
-uppercase {
+.uppercase {
     text-transform: uppercase;
 }
 
