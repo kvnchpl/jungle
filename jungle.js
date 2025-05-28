@@ -11,19 +11,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const hoverText = document.querySelector('.hover-reveal-text');
 
-    // Handle hover behavior on title
-    const toggleSolidBg = (e) =>
-        body.classList.toggle('solid-bg', e.type === 'mouseenter');
-    title.addEventListener('mouseenter', toggleSolidBg);
-    title.addEventListener('mouseleave', toggleSolidBg);
+    // Delay hover listeners to avoid false initial triggers
+    setTimeout(() => {
+        const toggleSolidBg = (e) =>
+            body.classList.toggle('solid-bg', e.type === 'mouseenter');
+        title.addEventListener('mouseenter', toggleSolidBg);
+        title.addEventListener('mouseleave', toggleSolidBg);
 
-    // Handle hover text visibility if present
-    if (hoverText) {
-        const toggleHoverText = (e) =>
-            hoverText.classList.toggle('hover-revealed', e.type === 'mouseenter');
-        title.addEventListener('mouseenter', toggleHoverText);
-        title.addEventListener('mouseleave', toggleHoverText);
-    }
+        if (hoverText) {
+            const toggleHoverText = (e) =>
+                hoverText.classList.toggle('hover-revealed', e.type === 'mouseenter');
+            title.addEventListener('mouseenter', toggleHoverText);
+            title.addEventListener('mouseleave', toggleHoverText);
+        }
+    }, 100);
 
     body.classList.add('js-ready');
 });
