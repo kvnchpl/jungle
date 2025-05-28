@@ -53,9 +53,9 @@
     --background-image-home: url('a/i/jungle_diffusion_3.png');
 
     /* Glow Effect */
-    --glow-small: 2px;
-    --glow-medium: 4px;
-    --glow-large: 8px;
+    --glow-small: 4px;
+    --glow-medium: 8px;
+    --glow-large: 12px;
 
 }
 
