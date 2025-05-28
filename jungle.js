@@ -21,10 +21,25 @@ if (title) {
     }
 }
 
+// Store original inline background for restoration
+const originalBg = body.style.backgroundImage;
+
 // Apply background change effect when hovering over any link.
 document.querySelectorAll('a').forEach(link => {
-    link.addEventListener('mouseenter', () => body.classList.add('solid-bg'));
-    link.addEventListener('mouseleave', () => body.classList.remove('solid-bg'));
+    link.addEventListener('mouseenter', () => {
+        if (body.classList.contains('custom-bg')) {
+            body.style.backgroundImage = 'none';
+        } else {
+            body.classList.add('solid-bg');
+        }
+    });
+    link.addEventListener('mouseleave', () => {
+        if (body.classList.contains('custom-bg')) {
+            body.style.backgroundImage = originalBg;
+        } else {
+            body.classList.remove('solid-bg');
+        }
+    });
 });
 
 // Determine if a background image is already set on the body.
