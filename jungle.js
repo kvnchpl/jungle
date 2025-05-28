@@ -24,4 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
         title.addEventListener('mouseenter', toggleHoverText);
         title.addEventListener('mouseleave', toggleHoverText);
     }
+
+    body.classList.add('js-ready');
 });
