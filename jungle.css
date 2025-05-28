@@ -325,6 +325,10 @@ a:active img {
     transition: opacity 0.5s ease-in-out;
 }
 
+.hover-reveal-text.hover-revealed {
+    opacity: 1;
+}
+
 pre {
     font-family: var(--font-main);
     max-width: 90vw;

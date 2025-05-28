@@ -15,12 +15,10 @@ if (window.innerWidth > 768) {
         // If hover text exists, toggle its visibility when the title is hovered.
         if (hoverText) {
             title.addEventListener('mouseenter', () => {
-                hoverText.style.opacity = '1';
-                hoverText.setAttribute('aria-hidden', 'false');
+                hoverText.classList.add('hover-revealed');
             });
             title.addEventListener('mouseleave', () => {
-                hoverText.style.opacity = '0';
-                hoverText.setAttribute('aria-hidden', 'true');
+                hoverText.classList.remove('hover-revealed');
             });
         }
     }
