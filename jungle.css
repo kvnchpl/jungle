@@ -84,6 +84,7 @@ body.solid-bg {
 }
 
 body::before {
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
@@ -93,25 +94,18 @@ body::before {
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
-    opacity: 0;
-    transition: var(--transition-body-opacity);
     pointer-events: none;
-    content: none;
+    transition: var(--transition-body-opacity);
+    opacity: 1;
+    background-image: var(--background-image-home);
 }
 
-body.use-default-bg::before {
-    content: "";
-    background-image: var(--background-image-home);
-    opacity: 1;
-    pointer-events: none;
+body.custom-bg::before {
+    background-image: var(--custom-background-image);
 }
 
 body.solid-bg::before {
     opacity: 0;
-}
-
-body.custom-bg::before {
-    content: none;
 }
 
 main {
