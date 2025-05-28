@@ -111,8 +111,8 @@ body.has-inline-bg::before {
 
 .three-by-three-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
