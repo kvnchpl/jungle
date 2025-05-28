@@ -319,19 +319,6 @@ pre {
         min-height: 100vh;
     }
 
-    /* 
-    .top,
-    .left,
-    .right,
-    .offset-bottom,
-    .bottom,
-    .center-x {
-        position: static;
-        transform: none;
-        text-align: center;
-    }
-    */
-
     .centered-title {
         position: absolute;
         top: 50%;
