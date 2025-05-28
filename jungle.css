@@ -213,9 +213,7 @@ a:active img {
 }
 
 
-.centered-title:hover+.hover-reveal-text,
-.centered-title:hover~.hover-reveal-text,
-main:hover+.hover-reveal-text {
+.centered-title:hover+.hover-reveal-text {
     opacity: 1;
 }
 
