@@ -1,5 +1,4 @@
 // Get references to key DOM elements.
-const body = document.body;
 const title = document.querySelector('.centered-title');
 const hoverText = document.querySelector('.hover-reveal-text');
 
@@ -19,16 +18,4 @@ if (title) {
             hoverText.setAttribute('aria-hidden', 'true');
         });
     }
-}
-
-
-// Determine if a background image is already set on the body.
-const computedBg = getComputedStyle(body).getPropertyValue("background-image");
-
-// Apply default background image if none is set, otherwise mark as using a custom background.
-if (!computedBg || computedBg === 'none' || computedBg === 'initial') {
-    body.classList.add('use-default-bg');
-} else {
-    body.classList.add('custom-bg');
-    body.style.setProperty('--custom-background-image', computedBg);
 }
