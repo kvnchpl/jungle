@@ -406,7 +406,7 @@ pre {
         font-size: var(--font-size-centered-title-mobile);
     }
 
-    .hover-reveal-text.hover-reveal-text.hover-revealed {
+    .hover-reveal-text {
         opacity: 1;
         pointer-events: auto;
     }
