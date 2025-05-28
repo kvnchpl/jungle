@@ -219,6 +219,25 @@ body.has-inline-bg::before {
     text-align: right;
 }
 
+.simple-flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4vh;
+    padding: var(--padding-grid-item);
+    padding-top: calc(var(--margin-pre) + var(--padding-grid-item));
+    width: 100vw;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.simple-flex-column pre {
+    width: 100%;
+    max-width: 90ch;
+    text-align: left;
+}
+
 h1 {
     font-family: var(--font-main);
     font-size: var(--font-size-h1);
