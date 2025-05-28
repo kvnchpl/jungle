@@ -307,14 +307,37 @@ pre {
         display: block;
         padding: var(--padding-main);
         position: relative;
+        min-height: 100vh;
     }
 
-    .hover-reveal-text {
+    .top,
+    .left,
+    .right,
+    .offset-bottom,
+    .bottom,
+    .center-x {
         position: static;
         transform: none;
         text-align: center;
-        margin-top: var(--margin-body);
+    }
+
+    .centered-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: var(--font-size-centered-title-mobile);
+    }
+
+    .hover-reveal-text {
+        position: relative;
+        display: block;
+        transform: none;
+        text-align: left;
+        margin: 2rem auto 0 auto;
         opacity: 1;
+        max-width: 90vw;
     }
 
     .six-column-grid {
@@ -331,10 +354,6 @@ pre {
 
     .img-large {
         max-width: var(--max-width-img-large-mobile);
-    }
-
-    .centered-title {
-        font-size: var(--font-size-centered-title-mobile);
     }
 
     h1 {
