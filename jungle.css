@@ -219,7 +219,7 @@ body.has-inline-bg::before {
     text-align: right;
 }
 
-.simple-flex-column {
+.flex-column {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,7 +232,7 @@ body.has-inline-bg::before {
     box-sizing: border-box;
 }
 
-.simple-flex-column pre {
+.flex-column pre {
     width: 100%;
     max-width: 90ch;
     text-align: left;
