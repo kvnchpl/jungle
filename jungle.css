@@ -304,25 +304,9 @@ pre {
 
 @media (max-width: 768px) {
     main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
+        display: block;
         padding: var(--padding-main);
-        gap: 2rem;
         position: relative;
-    }
-
-    .top,
-    .left,
-    .right,
-    .offset-bottom,
-    .bottom,
-    .center-x,
-    .centered-title {
-        position: static;
-        transform: none;
-        text-align: center;
     }
 
     .hover-reveal-text {
