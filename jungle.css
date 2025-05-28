@@ -134,10 +134,10 @@ body.has-inline-bg::before {
 
 .three-by-three-grid>div>a {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
     height: 100%;
-    width: auto;
+    margin: 0 auto;
 }
 
 .three-by-three-grid>div * {
@@ -149,10 +149,9 @@ body.has-inline-bg::before {
 
 .three-by-three-grid img {
     height: 100%;
-    width: auto;
-    object-fit: fill;
+    width: 100%;
+    object-fit: contain;
     box-sizing: border-box;
-    align-self: stretch;
 }
 
 .grid-tl {
