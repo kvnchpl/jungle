@@ -212,7 +212,10 @@ a:active img {
     transition: opacity 0.5s ease-in-out;
 }
 
-.centered-title:hover~.hover-reveal-text {
+
+.centered-title:hover+.hover-reveal-text,
+.centered-title:hover~.hover-reveal-text,
+main:hover+.hover-reveal-text {
     opacity: 1;
 }
 
