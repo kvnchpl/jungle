@@ -103,6 +103,10 @@ body.solid-bg::before {
     opacity: 0;
 }
 
+body.custom-bg::before {
+    content: none;
+}
+
 main {
     display: flex;
     flex-direction: column;
