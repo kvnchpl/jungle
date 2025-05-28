@@ -213,9 +213,6 @@ a:active img {
 }
 
 
-.centered-title:hover+.hover-reveal-text {
-    opacity: 1;
-}
 
 pre {
     font-family: var(--font-main);
