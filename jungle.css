@@ -322,11 +322,15 @@ a:active img {
     display: block;
     text-align: left;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
 .hover-reveal-text.hover-revealed {
     opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 pre {
@@ -406,6 +410,8 @@ pre {
 
     body.js-ready .hover-reveal-text {
         opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
     }
 
     .img-small {
