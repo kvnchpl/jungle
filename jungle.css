@@ -108,7 +108,6 @@ body.has-inline-bg::before {
     content: none;
 }
 
-
 .three-by-three-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -117,6 +116,42 @@ body.has-inline-bg::before {
     height: 100vh;
     box-sizing: border-box;
     position: relative;
+}
+
+.grid-tl {
+    grid-area: 1 / 1;
+}
+
+.grid-tc {
+    grid-area: 1 / 2;
+}
+
+.grid-tr {
+    grid-area: 1 / 3;
+}
+
+.grid-cl {
+    grid-area: 2 / 1;
+}
+
+.grid-cc {
+    grid-area: 2 / 2;
+}
+
+.grid-cr {
+    grid-area: 2 / 3;
+}
+
+.grid-bl {
+    grid-area: 3 / 1;
+}
+
+.grid-bc {
+    grid-area: 3 / 2;
+}
+
+.grid-br {
+    grid-area: 3 / 3;
 }
 
 h1 {
@@ -341,4 +376,40 @@ pre {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
+}
+
+.grid-tl {
+    grid-area: 1 / 1;
+}
+
+.grid-tc {
+    grid-area: 1 / 2;
+}
+
+.grid-tr {
+    grid-area: 1 / 3;
+}
+
+.grid-cl {
+    grid-area: 2 / 1;
+}
+
+.grid-cc {
+    grid-area: 2 / 2;
+}
+
+.grid-cr {
+    grid-area: 2 / 3;
+}
+
+.grid-bl {
+    grid-area: 3 / 1;
+}
+
+.grid-bc {
+    grid-area: 3 / 2;
+}
+
+.grid-br {
+    grid-area: 3 / 3;
 }
