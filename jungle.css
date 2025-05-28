@@ -120,6 +120,13 @@ body.has-inline-bg::before {
     position: relative;
 }
 
+.three-by-three-grid > div {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .grid-tl {
     grid-area: 1 / 1;
 }
