@@ -122,28 +122,21 @@ body.has-inline-bg::before {
     padding: var(--padding-grid-item);
 }
 
-.three-by-three-grid>div {
-    display: flex;
-    min-width: 0;
-    min-height: 0;
-    height: 100%;
-    width: 100%;
-}
-
-.three-by-three-grid img,
-.three-by-three-grid > div > a {
-    height: 100%;
-    width: auto;
-    object-fit: contain;
-    box-sizing: border-box;
-}
-
+.three-by-three-grid>div,
 .three-by-three-grid>div>a {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.three-by-three-grid img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    box-sizing: border-box;
 }
 
 .grid-tl {
