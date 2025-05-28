@@ -75,6 +75,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-image: inherit;
 }
 
 body.solid-bg {
@@ -90,7 +91,7 @@ body::before {
     height: 100vh;
     width: 100vw;
     z-index: -1;
-    background-image: var(--background-image-home);
+    background-image: inherit;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,6 +102,10 @@ body::before {
 
 body.solid-bg::before {
     opacity: 0;
+}
+
+body.has-inline-bg::before {
+    content: none;
 }
 
 main {

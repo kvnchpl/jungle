@@ -1,4 +1,8 @@
 const body = document.body;
+const computedBg = body.style.backgroundImage;
+if (computedBg && computedBg !== 'none') {
+    body.classList.add('has-inline-bg');
+}
 const title = document.querySelector('.centered-title');
 const hoverText = document.querySelector('.hover-reveal-text');
 
