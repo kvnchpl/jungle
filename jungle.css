@@ -424,7 +424,14 @@ pre {
 
 @media (max-width: 768px) {
     .three-by-three-grid {
+        display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-auto-rows: auto;
+        grid-auto-flow: row;
+    }
+    .three-by-three-grid > div {
+        grid-area: unset;
+        justify-content: center;
+        align-items: center;
     }
 }
