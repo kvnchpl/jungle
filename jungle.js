@@ -1,17 +1,14 @@
-const computedBg = getComputedStyle(body).getPropertyValue("background-image");
+// Get references to key DOM elements.
 const body = document.body;
 const title = document.querySelector('.centered-title');
 const hoverText = document.querySelector('.hover-reveal-text');
 
-if (!computedBg || computedBg === 'none' || computedBg === 'initial') {
-    body.style.backgroundImage = getComputedStyle(document.documentElement).getPropertyValue('--background-image-home');
-} else {
-    body.classList.add('custom-bg');
-}
-
+// If a centered title exists, enable background and hover text interactions.
 if (title) {
+    // Change background to solid color on hover, and revert on mouse leave.
     title.addEventListener('mouseenter', () => body.classList.add('solid-bg'));
     title.addEventListener('mouseleave', () => body.classList.remove('solid-bg'));
+    // If hover text exists, toggle its visibility when the title is hovered.
     if (hoverText) {
         title.addEventListener('mouseenter', () => {
             hoverText.style.opacity = '1';
@@ -24,7 +21,18 @@ if (title) {
     }
 }
 
+// Apply background change effect when hovering over any link.
 document.querySelectorAll('a').forEach(link => {
     link.addEventListener('mouseenter', () => body.classList.add('solid-bg'));
     link.addEventListener('mouseleave', () => body.classList.remove('solid-bg'));
 });
+
+// Determine if a background image is already set on the body.
+const computedBg = getComputedStyle(body).getPropertyValue("background-image");
+
+// Apply default background image if none is set, otherwise mark as using a custom background.
+if (!computedBg || computedBg === 'none' || computedBg === 'initial') {
+    body.style.backgroundImage = getComputedStyle(document.documentElement).getPropertyValue('--background-image-home');
+} else {
+    body.classList.add('custom-bg');
+}
