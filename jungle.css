@@ -147,7 +147,7 @@ body.has-inline-bg::before {
 
 .three-by-three-grid img {
     height: 100%;
-    width: 100%;
+    width: auto;
     object-fit: contain;
     box-sizing: border-box;
 }
