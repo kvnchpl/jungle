@@ -146,13 +146,6 @@ body.has-inline-bg::before {
     margin: 0 auto;
 }
 
-.three-by-three-grid img {
-    height: 100%;
-    width: auto;
-    object-fit: contain;
-    box-sizing: border-box;
-}
-
 .grid-tl {
     grid-area: 1 / 1;
     align-items: flex-start;
@@ -261,15 +254,6 @@ a:active img {
     max-width: var(--max-width-img-large);
 }
 
-.back-button {
-    position: absolute;
-    top: var(--margin-pre);
-    left: var(--margin-pre);
-    background: none;
-    border: none;
-    font-family: var(--font-main);
-    font-size: var(--font-size-medium);
-}
 
 .centered-title {
     height: auto;
