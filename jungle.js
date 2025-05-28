@@ -1,6 +1,6 @@
 const body = document.body;
-const computedBg = body.style.backgroundImage;
-if (computedBg && computedBg !== 'none') {
+const inlineBg = body.getAttribute('style');
+if (inlineBg && inlineBg.includes('background-image')) {
     body.classList.add('has-inline-bg');
 }
 const title = document.querySelector('.centered-title');
