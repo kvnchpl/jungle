@@ -56,7 +56,7 @@
     --transition-title-opacity: opacity 0.3s ease-in-out;
 
     /* Background Images */
-    --background-image-home: url('a/i/jungle_diffusion_3.png');
+    --background-image-default: url('a/i/jungle_diffusion_3.png');
 
     /* Glow Effect */
     --glow-small: 4px;
@@ -81,7 +81,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: inherit;
 }
 
 body.solid-bg {
@@ -97,7 +96,7 @@ body::before {
     height: 100vh;
     width: 100vw;
     z-index: -1;
-    background-image: var(--background-image-home);
+    background-image: var(--background-image-default);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
