@@ -134,17 +134,25 @@ body.has-inline-bg::before {
 
 .three-by-three-grid>div>a {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     height: 100%;
     width: auto;
 }
 
-.three-by-three-grid img {
+.three-by-three-grid>div * {
     height: 100%;
     width: auto;
     object-fit: contain;
     box-sizing: border-box;
+}
+
+.three-by-three-grid img {
+    height: 100%;
+    width: auto;
+    object-fit: fill;
+    box-sizing: border-box;
+    align-self: stretch;
 }
 
 .grid-tl {
