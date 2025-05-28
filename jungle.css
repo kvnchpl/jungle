@@ -203,11 +203,13 @@ a:active img {
 }
 
 .hover-reveal-text {
+    max-width: 90vw;
+    text-align: left;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
-.centered-title:hover~.hover-reveal-text {
+.centered-title:hover+.info-block-container .hover-reveal-text {
     opacity: 1;
 }
 
@@ -290,6 +292,13 @@ pre {
     padding: 0 var(--padding-grid-item) 0 0;
 }
 
+.info-block-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
 @keyframes glowPulse {
 
     0%,
@@ -331,13 +340,7 @@ pre {
     }
 
     .hover-reveal-text {
-        position: relative;
-        display: block;
-        transform: none;
-        text-align: left;
-        margin: 2rem auto 0 auto;
         opacity: 1;
-        max-width: 90vw;
     }
 
     .six-column-grid {
