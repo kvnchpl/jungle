@@ -327,7 +327,7 @@ pre {
     border: none;
     font-family: var(--font-main);
     font-size: var(--font-size-medium);
-    z-index: 2;
+    z-index: var(--z-index-back-button)
 }
 
 .six-column-grid {
