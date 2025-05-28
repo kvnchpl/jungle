@@ -271,7 +271,8 @@ a:active img {
 }
 
 .centered-title {
-    display: block;
+    height: auto;
+    display: inline-block;
     font-family: var(--font-heading);
     font-size: var(--font-size-centered-title);
     color: var(--color-text);
@@ -281,6 +282,7 @@ a:active img {
     user-select: none;
     -webkit-user-select: none;
     transition: var(--transition-title-color);
+    margin: 0 auto;
     padding: var(--padding-title);
 }
 
