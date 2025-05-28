@@ -95,8 +95,8 @@ body::before {
     z-index: -1;
     opacity: 0;
     transition: var(--transition-body-opacity);
-    content: none;
     pointer-events: none;
+    content: none;
 }
 
 body.use-default-bg::before {
