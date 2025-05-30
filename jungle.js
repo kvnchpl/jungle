@@ -18,15 +18,14 @@ if (isHome && title) {
     }
 }
 
-// Other pages: solid background if no background-image is set
-if (!isHome) {
-    const hasInlineBackground = body.style.backgroundImage && body.style.backgroundImage !== 'none';
-    const customBgColor = body.dataset.bgColor;
+// All pages: apply background based on data attributes
+const bgImage = body.dataset.bgImage;
+const bgColor = body.dataset.bgColor;
 
-    if (!hasInlineBackground) {
-        body.classList.add('solid-bg');
-        if (customBgColor) {
-            body.style.backgroundColor = customBgColor;
-        }
-    }
+if (bgImage) {
+    body.style.backgroundImage = `url('${bgImage}')`;
+} else {
+    body.classList.add('solid-bg');
+    body.style.backgroundImage = 'none';
+    body.style.backgroundColor = bgColor || getComputedStyle(document.documentElement).getPropertyValue('--color-bg');
 }
