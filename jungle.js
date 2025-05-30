@@ -3,7 +3,7 @@ const title = document.querySelector('.centered-title');
 const hoverText = document.querySelector('.hover-reveal-text');
 const isHome = body.classList.contains('home');
 
-// Only run interactive background change on the homepage
+// Homepage: fade to solid color on title hover
 if (isHome && title) {
     title.addEventListener('mouseenter', () => body.classList.add('solid-bg'));
     title.addEventListener('mouseleave', () => body.classList.remove('solid-bg'));
@@ -18,7 +18,7 @@ if (isHome && title) {
     }
 }
 
-// On non-home pages, if no inline background-image is set, add solid background
+// Other pages: solid background if no background-image is set
 if (!isHome) {
     const hasInlineBackground = body.style.backgroundImage && body.style.backgroundImage !== 'none';
     const customBgColor = body.dataset.bgColor;
