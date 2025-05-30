@@ -21,7 +21,12 @@ if (isHome && title) {
 // On non-home pages, if no inline background-image is set, add solid background
 if (!isHome) {
     const hasInlineBackground = body.style.backgroundImage && body.style.backgroundImage !== 'none';
+    const customBgColor = body.dataset.bgColor;
+
     if (!hasInlineBackground) {
         body.classList.add('solid-bg');
+        if (customBgColor) {
+            body.style.backgroundColor = customBgColor;
+        }
     }
 }
