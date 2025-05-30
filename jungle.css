@@ -103,7 +103,6 @@ body.home::before {
 body.solid-bg {
     background-image: none;
     transition: var(--transition-body-bg-color);
-    background-color: var(--color-bg);
 }
 
 body.solid-bg::before {
