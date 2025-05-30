@@ -5,8 +5,16 @@ const isHome = body.classList.contains('home');
 
 // Homepage: fade to solid color on title hover
 if (isHome && title) {
-    title.addEventListener('mouseenter', () => body.classList.add('solid-bg'));
-    title.addEventListener('mouseleave', () => body.classList.remove('solid-bg'));
+    // Start with no background-image override
+    body.style.backgroundImage = '';
+
+    title.addEventListener('mouseenter', () => {
+        body.classList.add('solid-bg');
+    });
+
+    title.addEventListener('mouseleave', () => {
+        body.classList.remove('solid-bg');
+    });
 
     if (hoverText) {
         title.addEventListener('mouseenter', () => {
@@ -29,7 +37,4 @@ if (bgImage) {
     body.classList.add('solid-bg');
     body.style.backgroundImage = 'none';
     body.style.backgroundColor = bgColor || getComputedStyle(document.documentElement).getPropertyValue('--color-bg');
-} else {
-    // Ensure homepage starts with background image
-    body.style.backgroundImage = getComputedStyle(document.documentElement).getPropertyValue('--background-image-default');
 }
