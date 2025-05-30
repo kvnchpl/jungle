@@ -83,12 +83,7 @@ body {
     background-size: cover;
 }
 
-body.solid-bg {
-    background-image: none;
-    transition: var(--transition-body-bg-color);
-}
-
-body::before {
+body.home::before {
     content: "";
     position: fixed;
     top: 0;
@@ -105,12 +100,14 @@ body::before {
     pointer-events: none;
 }
 
-body.solid-bg::before {
-    opacity: 0;
+body.solid-bg {
+    background-image: none;
+    transition: var(--transition-body-bg-color);
+    background-color: var(--color-bg);
 }
 
-body.fullscreen-image::before {
-    content: none;
+body.solid-bg::before {
+    opacity: 0;
 }
 
 .layout {
@@ -236,20 +233,11 @@ body.fullscreen-image::before {
     text-align: left;
 }
 
-h1 {
-    font-family: var(--font-main);
-    font-size: var(--font-size-h1);
-    font-weight: var(--font-weight-bold);
-    text-transform: uppercase;
-    margin: 0 0 calc(var(--font-size-h1) / 2) 0;
-}
-
 .uppercase {
     text-transform: uppercase;
 }
 
 a,
-pre a,
 .back-button {
     color: var(--color-link);
     text-transform: uppercase;
@@ -258,7 +246,6 @@ pre a,
 }
 
 a:hover,
-pre a:hover,
 .back-button:hover {
     color: var(--color-link-hover);
     text-transform: inherit;
@@ -289,7 +276,6 @@ a:active img {
 .img-large {
     max-width: var(--max-width-img-large);
 }
-
 
 .centered-title {
     display: inline-block;
