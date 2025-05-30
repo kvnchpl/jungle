@@ -1,14 +1,13 @@
-// Get references to key DOM elements.
 const body = document.body;
 const title = document.querySelector('.centered-title');
 const hoverText = document.querySelector('.hover-reveal-text');
+const isHome = body.classList.contains('home');
 
-// If a centered title exists, enable background and hover text interactions.
-if (title) {
-    // Change background to solid color on hover, and revert on mouse leave.
+// Only run interactive background change on the homepage
+if (isHome && title) {
     title.addEventListener('mouseenter', () => body.classList.add('solid-bg'));
     title.addEventListener('mouseleave', () => body.classList.remove('solid-bg'));
-    // If hover text exists, toggle its visibility when the title is hovered.
+
     if (hoverText) {
         title.addEventListener('mouseenter', () => {
             hoverText.classList.add('hover-revealed');
@@ -16,5 +15,13 @@ if (title) {
         title.addEventListener('mouseleave', () => {
             hoverText.classList.remove('hover-revealed');
         });
+    }
+}
+
+// On non-home pages, if no inline background-image is set, add solid background
+if (!isHome) {
+    const hasInlineBackground = body.style.backgroundImage && body.style.backgroundImage !== 'none';
+    if (!hasInlineBackground) {
+        body.classList.add('solid-bg');
     }
 }
