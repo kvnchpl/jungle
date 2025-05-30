@@ -149,6 +149,7 @@ body.solid-bg::before {
     box-sizing: border-box;
 }
 
+/* top-left or left-top */
 .grid-tl,
 .grid-lt {
     grid-area: 1 / 1;
@@ -157,6 +158,7 @@ body.solid-bg::before {
     text-align: left;
 }
 
+/* top-center or center-top */
 .grid-tc,
 .grid-ct {
     grid-area: 1 / 2;
@@ -165,6 +167,7 @@ body.solid-bg::before {
     text-align: center;
 }
 
+/* top-right or right-top */
 .grid-tr,
 .grid-rt {
     grid-area: 1 / 3;
@@ -173,6 +176,7 @@ body.solid-bg::before {
     text-align: right;
 }
 
+/* middle-left or left-middle */
 .grid-cl,
 .grid-lc {
     grid-area: 2 / 1;
@@ -181,6 +185,7 @@ body.solid-bg::before {
     text-align: left;
 }
 
+/* center-center */
 .grid-cc {
     grid-area: 2 / 2;
     align-items: center;
@@ -188,12 +193,14 @@ body.solid-bg::before {
     text-align: center;
 }
 
+/* center-center (full-width) */
 .grid-cc-wide {
     grid-area: 2 / 1 / 3 / 4;
     align-items: center;
     justify-content: center;
 }
 
+/* center-right or right-center */
 .grid-cr,
 .grid-rc {
     grid-area: 2 / 3;
@@ -202,6 +209,7 @@ body.solid-bg::before {
     text-align: right;
 }
 
+/* bottom-left or left-bottom */
 .grid-bl,
 .grid-lb {
     grid-area: 3 / 1;
@@ -210,6 +218,7 @@ body.solid-bg::before {
     text-align: left;
 }
 
+/* bottom-center or center-bottom */
 .grid-bc,
 .grid-cb {
     grid-area: 3 / 2;
@@ -218,6 +227,7 @@ body.solid-bg::before {
     text-align: center;
 }
 
+/* bottom-right or right-bottom */
 .grid-br,
 .grid-rb {
     grid-area: 3 / 3;
