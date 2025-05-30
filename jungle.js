@@ -19,13 +19,17 @@ if (isHome && title) {
 }
 
 // All pages: apply background based on data attributes
-const bgImage = body.dataset.bgImage;
-const bgColor = body.dataset.bgColor;
+const bgImage = body.dataset.bgImage?.trim();
+const bgColor = body.dataset.bgColor?.trim();
 
+// Apply background image or color for all pages
 if (bgImage) {
     body.style.backgroundImage = `url('${bgImage}')`;
-} else {
+} else if (!isHome) {
     body.classList.add('solid-bg');
     body.style.backgroundImage = 'none';
     body.style.backgroundColor = bgColor || getComputedStyle(document.documentElement).getPropertyValue('--color-bg');
+} else {
+    // Ensure homepage starts with background image
+    body.style.backgroundImage = getComputedStyle(document.documentElement).getPropertyValue('--background-image-default');
 }
