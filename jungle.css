@@ -109,7 +109,7 @@ body.solid-bg::before {
     opacity: 0;
 }
 
-body.has-inline-bg::before {
+body.fullscreen-image::before {
     content: none;
 }
 
