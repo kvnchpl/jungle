@@ -312,7 +312,7 @@ a:active img {
     opacity: 0;
 }
 
-.fullscreen-image {
+.{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
