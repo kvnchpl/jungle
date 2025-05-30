@@ -78,9 +78,9 @@ body {
     text-transform: lowercase;
     background-color: var(--color-bg);
     color: var(--color-text);
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
+    background-size: cover;
 }
 
 body.solid-bg {
@@ -310,12 +310,6 @@ a:active img {
 
 .centered-title:hover {
     opacity: 0;
-}
-
-.{
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
 }
 
 .hover-reveal-text {
