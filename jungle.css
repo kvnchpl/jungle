@@ -78,7 +78,7 @@ body {
     text-transform: lowercase;
     background-color: var(--color-bg);
     color: var(--color-text);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center center;
     background-size: cover;
 }
