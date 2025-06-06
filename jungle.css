@@ -356,6 +356,12 @@ pre {
     z-index: var(--z-index-back-button)
 }
 
+.webgl-embed iframe {
+    border: none;
+    width: 100%;
+    height: 80vh;
+}
+
 @keyframes glow-pulse {
 
     0%,
