@@ -201,15 +201,6 @@ body.solid-bg::before {
     position: relative;
 }
 
-.grid-cc-wide .centered-title,
-.grid-cc-wide .hover-reveal-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
 /* center-right or right-center */
 .grid-cr,
 .grid-rc {
@@ -301,6 +292,15 @@ a:active img {
 
 .img-large {
     max-width: var(--max-width-img-large);
+}
+
+.centered-title,
+.hover-reveal-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .centered-title {
