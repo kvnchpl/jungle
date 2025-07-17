@@ -20,11 +20,13 @@ if (isHome && title && hoverText) {
     });
 
     hoverText.addEventListener('mouseenter', () => {
+        body.classList.add('solid-bg');
         titleContainer.classList.remove('hover-active');
         revealContainer.classList.add('hover-active');
     });
 
     hoverText.addEventListener('mouseleave', () => {
+        body.classList.remove('solid-bg');
         revealContainer.classList.remove('hover-active');
         titleContainer.classList.add('hover-active');
     });
