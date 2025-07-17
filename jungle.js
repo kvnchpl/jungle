@@ -16,14 +16,14 @@ if (isHome && title) {
         body.classList.remove('solid-bg');
     });
 
-    if (hoverText) {
-        title.addEventListener('mouseenter', () => {
-            hoverText.classList.add('hover-revealed');
-        });
-        title.addEventListener('mouseleave', () => {
-            hoverText.classList.remove('hover-revealed');
-        });
-    }
+    // if (hoverText) {
+    //     title.addEventListener('mouseenter', () => {
+    //         hoverText.classList.add('hover-revealed');
+    //     });
+    //     title.addEventListener('mouseleave', () => {
+    //         hoverText.classList.remove('hover-revealed');
+    //     });
+    // }
 }
 
 // All pages: apply background based on data attributes

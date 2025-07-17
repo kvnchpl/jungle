@@ -314,6 +314,7 @@ a:active img {
 
 .centered-title:hover {
     opacity: 0;
+    pointer-events: none;
 }
 
 .hover-reveal-text {
@@ -321,10 +322,12 @@ a:active img {
     text-align: left;
     opacity: 0;
     pointer-events: none;
-    transition: var(--transition-title-opacity)
+    transition: var(--transition-title-opacity);
+    z-index: calc(var(--z-index-title) + 1);
+    position: relative;
 }
 
-.hover-reveal-text.hover-revealed {
+.centered-title:hover+.hover-reveal-text {
     opacity: 1;
     pointer-events: auto;
 }
