@@ -16,7 +16,7 @@ if (isHome && title) {
     title.addEventListener('mouseleave', () => {
         body.classList.remove('solid-bg');
     });
-
+    /*
     if (hoverText) {
         title.addEventListener('mouseenter', () => {
             hoverText.classList.add('hover-revealed');
@@ -25,6 +25,7 @@ if (isHome && title) {
             hoverText.classList.remove('hover-revealed');
         });
     }
+    */
 }
 
 // All pages: apply background based on data attributes
