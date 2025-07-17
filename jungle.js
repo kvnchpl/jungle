@@ -16,16 +16,15 @@ if (isHome && title) {
     title.addEventListener('mouseleave', () => {
         body.classList.remove('solid-bg');
     });
-    /*
+
     if (hoverText) {
         title.addEventListener('mouseenter', () => {
-            hoverText.classList.add('hover-revealed');
+            container.classList.add('hover-active');
         });
         title.addEventListener('mouseleave', () => {
-            hoverText.classList.remove('hover-revealed');
+            container.classList.remove('hover-active');
         });
     }
-    */
 }
 
 // All pages: apply background based on data attributes

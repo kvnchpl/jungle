@@ -294,6 +294,15 @@ a:active img {
     max-width: var(--max-width-img-large);
 }
 
+.grid-cc-wide.hover-active .centered-title {
+    opacity: 0;
+}
+
+.grid-cc-wide.hover-active .hover-reveal-text {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .centered-title,
 .hover-reveal-text {
     position: absolute;
@@ -320,15 +329,6 @@ a:active img {
     width: 100%;
     max-width: none;
     overflow: visible;
-}
-
-.centered-title:hover {
-    opacity: 0;
-}
-
-.centered-title:hover+.hover-reveal-text {
-    opacity: 1;
-    pointer-events: auto;
 }
 
 .hover-reveal-text {
