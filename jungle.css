@@ -338,6 +338,7 @@ a:active img {
     pointer-events: none;
     transition: var(--transition-title-opacity);
     z-index: calc(var(--z-index-title) + 1);
+    width: 100%;
 }
 
 pre {
