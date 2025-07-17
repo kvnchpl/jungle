@@ -6,29 +6,15 @@ const title = titleContainer?.querySelector('.centered-title');
 const hoverText = revealContainer?.querySelector('.hover-reveal-text');
 
 // Homepage: fade to solid color on title hover
-if (isHome && title && hoverText) {
+if (title && hoverText) {
     title.addEventListener('mouseenter', () => {
-        body.classList.add('solid-bg');
         titleContainer.classList.add('hover-active');
-        revealContainer.classList.add('hover-active');
-    });
-
-    title.addEventListener('mouseleave', () => {
-        body.classList.remove('solid-bg');
-        titleContainer.classList.remove('hover-active');
-        revealContainer.classList.remove('hover-active');
-    });
-
-    hoverText.addEventListener('mouseenter', () => {
-        body.classList.add('solid-bg');
-        titleContainer.classList.remove('hover-active');
         revealContainer.classList.add('hover-active');
     });
 
     hoverText.addEventListener('mouseleave', () => {
-        body.classList.remove('solid-bg');
+        titleContainer.classList.remove('hover-active');
         revealContainer.classList.remove('hover-active');
-        titleContainer.classList.add('hover-active');
     });
 }
 
