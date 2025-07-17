@@ -1,15 +1,12 @@
 const body = document.body;
+const isHome = body.classList.contains('home');
 const titleContainer = document.querySelector('.grid-cc-wide:nth-of-type(1)');
 const revealContainer = document.querySelector('.grid-cc-wide:nth-of-type(2)');
 const title = titleContainer?.querySelector('.centered-title');
 const hoverText = revealContainer?.querySelector('.hover-reveal-text');
-const isHome = body.classList.contains('home');
 
 // Homepage: fade to solid color on title hover
 if (isHome && title && hoverText) {
-    // Start with no background-image override
-    body.style.backgroundImage = '';
-
     title.addEventListener('mouseenter', () => {
         body.classList.add('solid-bg');
         titleContainer.classList.add('hover-active');
@@ -23,13 +20,13 @@ if (isHome && title && hoverText) {
     });
 
     hoverText.addEventListener('mouseenter', () => {
-        titleContainer.classList.add('hover-active');
+        titleContainer.classList.remove('hover-active');
         revealContainer.classList.add('hover-active');
     });
 
     hoverText.addEventListener('mouseleave', () => {
-        titleContainer.classList.remove('hover-active');
         revealContainer.classList.remove('hover-active');
+        titleContainer.classList.add('hover-active');
     });
 }
 
