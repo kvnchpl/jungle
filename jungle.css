@@ -312,9 +312,16 @@ a:active img {
     overflow: visible;
 }
 
-.centered-title:hover {
+.centered-title:hover,
+.hover-reveal-text:hover {
     opacity: 0;
     pointer-events: none;
+}
+
+.centered-title:hover+.hover-reveal-text,
+.hover-reveal-text:hover {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .hover-reveal-text {
@@ -325,11 +332,6 @@ a:active img {
     transition: var(--transition-title-opacity);
     z-index: calc(var(--z-index-title) + 1);
     position: relative;
-}
-
-.centered-title:hover+.hover-reveal-text {
-    opacity: 1;
-    pointer-events: auto;
 }
 
 pre {
