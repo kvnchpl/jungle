@@ -312,14 +312,11 @@ a:active img {
     overflow: visible;
 }
 
-.centered-title:hover,
-.hover-reveal-text:hover {
+.centered-title:hover {
     opacity: 0;
-    pointer-events: none;
 }
 
-.centered-title:hover+.hover-reveal-text,
-.hover-reveal-text:hover {
+.centered-title:hover+.hover-reveal-text {
     opacity: 1;
     pointer-events: auto;
 }
