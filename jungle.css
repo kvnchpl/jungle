@@ -299,6 +299,7 @@ a:active img {
     font-size: var(--font-size-centered-title);
     color: var(--color-text);
     text-transform: lowercase;
+    text-align: center;
     z-index: var(--z-index-title);
     cursor: default;
     user-select: none;
@@ -306,6 +307,7 @@ a:active img {
     transition: var(--transition-title-opacity);
     margin: 0 auto;
     padding: var(--padding-title);
+    width: 100%;
     max-width: none;
     overflow: visible;
 }
