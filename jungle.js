@@ -1,30 +1,36 @@
 const body = document.body;
-const container = document.querySelector('.grid-cc-wide');
-const title = container?.querySelector('.centered-title');
-const hoverText = container?.querySelector('.hover-reveal-text');
+const titleContainer = document.querySelector('.grid-cc-wide:nth-of-type(1)');
+const revealContainer = document.querySelector('.grid-cc-wide:nth-of-type(2)');
+const title = titleContainer?.querySelector('.centered-title');
+const hoverText = revealContainer?.querySelector('.hover-reveal-text');
 const isHome = body.classList.contains('home');
 
 // Homepage: fade to solid color on title hover
-if (isHome && title) {
+if (isHome && title && hoverText) {
     // Start with no background-image override
     body.style.backgroundImage = '';
 
     title.addEventListener('mouseenter', () => {
         body.classList.add('solid-bg');
+        titleContainer.classList.add('hover-active');
+        revealContainer.classList.add('hover-active');
     });
 
     title.addEventListener('mouseleave', () => {
         body.classList.remove('solid-bg');
+        titleContainer.classList.remove('hover-active');
+        revealContainer.classList.remove('hover-active');
     });
 
-    if (hoverText) {
-        title.addEventListener('mouseenter', () => {
-            container.classList.add('hover-active');
-        });
-        title.addEventListener('mouseleave', () => {
-            container.classList.remove('hover-active');
-        });
-    }
+    hoverText.addEventListener('mouseenter', () => {
+        titleContainer.classList.add('hover-active');
+        revealContainer.classList.add('hover-active');
+    });
+
+    hoverText.addEventListener('mouseleave', () => {
+        titleContainer.classList.remove('hover-active');
+        revealContainer.classList.remove('hover-active');
+    });
 }
 
 // All pages: apply background based on data attributes
