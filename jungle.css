@@ -280,8 +280,8 @@ a img {
 a:hover img,
 a:focus img,
 a:active img {
-    animation-play-state: running;
-    filter: drop-shadow(0 0 var(--glow-large) var(--color-title-hover));
+    animation: none;
+    box-shadow: 0 0 var(--glow-large) var(--glow-large) var(--color-title-hover);
 }
 
 .img-small {
