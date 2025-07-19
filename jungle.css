@@ -280,8 +280,9 @@ a img {
 a:hover img,
 a:focus img,
 a:active img {
-    animation: none;
-    box-shadow: 0 0 var(--glow-large) var(--glow-large) var(--color-title-hover);
+    box-shadow:
+        0 0 var(--glow-large) var(--glow-large) var(--color-title-hover),
+        0 0 var(--glow-small) var(--glow-small) var(--color-title-hover);
 }
 
 .img-small {
